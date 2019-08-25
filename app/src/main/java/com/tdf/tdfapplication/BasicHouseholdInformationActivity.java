@@ -113,7 +113,7 @@ public class BasicHouseholdInformationActivity extends AppCompatActivity {
             }
         });
     }
-    }
+
 
     private void initialize(){
 
@@ -227,4 +227,4 @@ public class BasicHouseholdInformationActivity extends AppCompatActivity {
 //            }
 //        });
     }
-}
+
