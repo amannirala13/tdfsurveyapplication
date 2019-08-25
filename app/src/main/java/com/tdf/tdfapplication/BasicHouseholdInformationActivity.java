@@ -38,6 +38,7 @@ public class BasicHouseholdInformationActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_basic_household_information);
+        initialize();
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -105,7 +106,12 @@ public class BasicHouseholdInformationActivity extends AppCompatActivity {
             }
         });
 
-
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.i("INFO",PersonalDetailsActivity.PERSON_KEY + " " + totalIncome + " " + caste + " " + tribe + " " + religion + " " + numberOfPeople);
+            }
+        });
     }
 
     private void initialize(){
@@ -219,5 +225,5 @@ public class BasicHouseholdInformationActivity extends AppCompatActivity {
 //                finish();
 //            }
 //        });
-    }
 }
+
