@@ -98,8 +98,8 @@
             android:layout_marginTop="28dp"
             android:text="@string/question_one_3"
             android:textSize="20sp"
-            app:layout_constraintStart_toStartOf="@+id/respondent_caste_label"
-            app:layout_constraintTop_toBottomOf="@+id/respondent_caste_label"
+            app:layout_constraintStart_toStartOf="@+id/respondent_tribe_label"
+            app:layout_constraintTop_toBottomOf="@+id/respondent_tribe_label"
             tools:layout_editor_absoluteX="32dp" />
 
         <Spinner
