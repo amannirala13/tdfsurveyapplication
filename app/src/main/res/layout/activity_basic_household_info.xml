@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BasicHouseholdInfoActivity">
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/respondent_MGNERA_card_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/question_one_5"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:id="@+id/respondent_MGNERA_card_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/respondent_MGNERA_card_label"
+            app:layout_constraintStart_toEndOf="@+id/respondent_MGNERA_card_label"
+            app:layout_constraintTop_toTopOf="@+id/respondent_MGNERA_card_label" />
+
+        <TextView
+            android:id="@+id/respondent_MGNERA_card_male_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:text="@string/question_one_5_male_label"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/respondent_MGNERA_card_label"
+            app:layout_constraintTop_toBottomOf="@+id/respondent_MGNERA_card_label" />
+
+        <Spinner
+            android:id="@+id/respondent_MGNERA_card_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/respondent_MGNERA_card_male_label"
+            app:layout_constraintStart_toEndOf="@+id/respondent_MGNERA_card_male_label"
+            app:layout_constraintTop_toTopOf="@+id/respondent_MGNERA_card_male_label" />
+
+        <TextView
+            android:id="@+id/respondent_MGNERA_card_female_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:text="@string/question_one_5_female_label"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/respondent_MGNERA_card_male"
+            app:layout_constraintStart_toEndOf="@+id/respondent_MGNERA_card_male"
+            app:layout_constraintTop_toTopOf="@+id/respondent_MGNERA_card_male"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Spinner
+            android:id="@+id/respondent_MGNERA_card_female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/respondent_MGNERA_card_female_label"
+            app:layout_constraintStart_toEndOf="@+id/respondent_MGNERA_card_female_label"
+            app:layout_constraintTop_toTopOf="@+id/respondent_MGNERA_card_female_label" />
+
+        <TextView
+            android:id="@+id/respondent_AADHAR_card_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:text="@string/question_one_7"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@+id/respondent_MGNERA_card_female"
+            app:layout_constraintStart_toStartOf="@+id/respondent_MGNERA_card_male_label"
+             />
+
+        <Spinner
+            android:id="@+id/respondent_AADHAR_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/respondent_AADHAR_card_label"
+            app:layout_constraintTop_toBottomOf="@+id/respondent_AADHAR_card_label"
+            />
+        <TextView
+            android:id="@+id/respondent_SHG_member_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:text="@string/question_one_9"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/respondent_AADHAR_card"
+            app:layout_constraintTop_toBottomOf="@+id/respondent_AADHAR_card" />
+
+        <Spinner
+            android:id="@+id/respondent_SHG_member"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/respondent_SHG_member_label"
+            app:layout_constraintTop_toBottomOf="@+id/respondent_SHG_member_label"
+            />
+        <Button
+            android:id="@+id/basic_household_info_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="8dp"
+            android:background="#000000"
+            android:text="Submit"
+            android:textColor="#ffffff"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.466"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/respondent_SHG_member_label" />
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

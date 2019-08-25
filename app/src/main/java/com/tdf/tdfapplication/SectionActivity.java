@@ -3,6 +3,7 @@ package com.tdf.tdfapplication;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -49,6 +50,8 @@ public class SectionActivity extends AppCompatActivity {
            MainActivity.class
     };
 
+    String personKey;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -57,11 +60,17 @@ public class SectionActivity extends AppCompatActivity {
         SectionAdapter sectionAdapter = new SectionAdapter(this,sectionList);
         ListView listView =findViewById(R.id.section_list);
         listView.setAdapter(sectionAdapter);
+        Intent intent = getIntent();
+        personKey = intent.getStringExtra("PERSON_KEY");
+        Log.i("INFO",personKey);
+
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent intent = new Intent(SectionActivity.this,classes[1]);
+                Intent intent = new Intent(SectionActivity.this,classes[0]);
+                Log.i("PERSON_KEY",personKey);
+                intent.putExtra("PERSON_KEY",personKey);
                 startActivity(intent);
             }
         });

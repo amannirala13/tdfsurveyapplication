@@ -92,31 +92,6 @@
             app:layout_constraintTop_toTopOf="@+id/respondent_tribe_label" />
 
         <TextView
-            android:id="@+id/respondent_other_tribe_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="32dp"
-            android:text="Other:"
-            android:textSize="20sp"
-            android:visibility="gone"
-            app:layout_constraintStart_toStartOf="@+id/respondent_tribe_label"
-            app:layout_constraintTop_toBottomOf="@+id/respondent_tribe_label" />
-
-        <EditText
-            android:id="@+id/tribe_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:textSize="20sp"
-            android:visibility="gone"
-            app:layout_constraintBottom_toBottomOf="@+id/respondent_other_tribe_name"
-            app:layout_constraintStart_toEndOf="@+id/respondent_other_tribe_name"
-            app:layout_constraintTop_toTopOf="@+id/respondent_other_tribe_name" />
-
-        <TextView
             android:id="@+id/respondent_income_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -124,7 +99,7 @@
             android:text="@string/question_one_3"
             android:textSize="20sp"
             app:layout_constraintStart_toStartOf="@+id/respondent_caste_label"
-            app:layout_constraintTop_toBottomOf="@+id/respondent_other_tribe_name"
+            app:layout_constraintTop_toBottomOf="@+id/respondent_caste_label"
             tools:layout_editor_absoluteX="32dp" />
 
         <Spinner
@@ -162,76 +137,15 @@
             app:layout_constraintTop_toTopOf="@+id/respondent_number_of_people_label" />
 
         <TextView
-            android:id="@+id/respondent_MGNERA_card_label"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="36dp"
-            android:text="@string/question_one_5"
-            android:textSize="20sp"
-            app:layout_constraintStart_toStartOf="@+id/respondent_number_of_people_label"
-            app:layout_constraintTop_toBottomOf="@+id/respondent_number_of_people_label" />
-
-        <Spinner
-            android:id="@+id/respondent_MGNERA_card_count"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:textSize="20sp"
-            app:layout_constraintBottom_toBottomOf="@+id/respondent_MGNERA_card_label"
-            app:layout_constraintStart_toEndOf="@+id/respondent_MGNERA_card_label"
-            app:layout_constraintTop_toTopOf="@+id/respondent_MGNERA_card_label" />
-
-        <TextView
-            android:id="@+id/respondent_MGNERA_card_male_label"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="36dp"
-            android:text="@string/question_one_5_male_label"
-            android:textSize="20sp"
-            app:layout_constraintStart_toStartOf="@+id/respondent_MGNERA_card_label"
-            app:layout_constraintTop_toBottomOf="@+id/respondent_MGNERA_card_label" />
-
-        <Spinner
-            android:id="@+id/respondent_MGNERA_card_male"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:textSize="20sp"
-            app:layout_constraintBottom_toBottomOf="@+id/respondent_MGNERA_card_male_label"
-            app:layout_constraintStart_toEndOf="@+id/respondent_MGNERA_card_male_label"
-            app:layout_constraintTop_toTopOf="@+id/respondent_MGNERA_card_male_label" />
-
-        <TextView
-            android:id="@+id/respondent_MGNERA_card_female_label"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="40dp"
-            android:text="@string/question_one_5_female_label"
-            android:textSize="20sp"
-            app:layout_constraintBottom_toBottomOf="@+id/respondent_MGNERA_card_male"
-            app:layout_constraintStart_toEndOf="@+id/respondent_MGNERA_card_male"
-            app:layout_constraintTop_toTopOf="@+id/respondent_MGNERA_card_male"
-            app:layout_constraintVertical_bias="1.0" />
-
-        <Spinner
-            android:id="@+id/respondent_MGNERA_card_female"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:textSize="20sp"
-            app:layout_constraintBottom_toBottomOf="@+id/respondent_MGNERA_card_female_label"
-            app:layout_constraintStart_toEndOf="@+id/respondent_MGNERA_card_female_label"
-            app:layout_constraintTop_toTopOf="@+id/respondent_MGNERA_card_female_label" />
-
-        <TextView
             android:id="@+id/respondent_ration_card_type_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
             android:layout_marginTop="36dp"
             android:text="@string/question_one_6"
             android:textSize="20sp"
-            app:layout_constraintStart_toStartOf="@+id/respondent_MGNERA_card_label"
-            app:layout_constraintTop_toBottomOf="@+id/respondent_MGNERA_card_female_label" />
+            app:layout_constraintStart_toStartOf="@+id/respondent_number_of_people_label"
+            app:layout_constraintTop_toBottomOf="@+id/respondent_number_of_people" />
 
         <Spinner
             android:id="@+id/respondent_ration_card_type"
@@ -242,33 +156,14 @@
             app:layout_constraintTop_toBottomOf="@+id/respondent_ration_card_type_label" />
 
         <TextView
-            android:id="@+id/respondent_AADHAR_card_label"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="36dp"
-            android:text="@string/question_one_7"
-            android:textSize="20sp"
-            app:layout_constraintStart_toStartOf="@+id/respondent_ration_card_type_label"
-            app:layout_constraintTop_toBottomOf="@+id/respondent_ration_card_type" />
-
-        <Spinner
-            android:id="@+id/respondent_AADHAR_card"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="20sp"
-            app:layout_constraintStart_toStartOf="@+id/respondent_AADHAR_card_label"
-            app:layout_constraintTop_toBottomOf="@+id/respondent_AADHAR_card_label"
-            />
-
-        <TextView
             android:id="@+id/electricity_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="36dp"
             android:text="@string/question_one_8"
             android:textSize="20sp"
-            app:layout_constraintStart_toStartOf="@+id/respondent_AADHAR_card"
-            app:layout_constraintTop_toBottomOf="@+id/respondent_AADHAR_card" />
+            app:layout_constraintStart_toStartOf="@+id/respondent_ration_card_type_label"
+            app:layout_constraintTop_toBottomOf="@+id/respondent_ration_card_type_label" />
 
         <CheckBox
             android:id="@+id/home"
@@ -303,25 +198,6 @@
             app:layout_constraintStart_toEndOf="@+id/farm"
             app:layout_constraintTop_toTopOf="@+id/electricity_label" />
 
-        <TextView
-            android:id="@+id/respondent_SHG_member_label"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="36dp"
-            android:text="@string/question_one_9"
-            android:textSize="20sp"
-            app:layout_constraintStart_toStartOf="@+id/electricity_label"
-            app:layout_constraintTop_toBottomOf="@+id/electricity_label" />
-
-        <Spinner
-            android:id="@+id/respondent_SHG_member"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="20sp"
-            app:layout_constraintStart_toStartOf="@+id/respondent_SHG_member_label"
-            app:layout_constraintTop_toBottomOf="@+id/respondent_SHG_member_label"
-            />
-
         <Button
             android:id="@+id/basic_household_info_submit"
             android:layout_width="wrap_content"
@@ -335,7 +211,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.466"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/respondent_SHG_member" />
+            app:layout_constraintTop_toBottomOf="@+id/none" />
 
     </android.support.constraint.ConstraintLayout>
 </ScrollView>

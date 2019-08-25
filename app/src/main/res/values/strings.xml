@@ -2,7 +2,18 @@
     <string name="app_name">tdfsurveyapplication</string>
     <string name="investigator_code_label">Enter Investigator Code:</string>
     <string-array name="village_list">
-        <item>Village name 1</item>
+        <item>Rajur</item>
+        <item>Hadsar</item>
+        <item>Unde Khadak</item>
+        <item>Kewadi</item>
+        <item>Nimgiri</item>
+        <item>Khatkale</item>
+        <item>Devle</item>
+        <item>Ghatgar</item>
+        <item>Taleran</item>
+        <item>Kopre</item>
+        <item>Mandve</item>
+        <item>Muthalne</item>
     </string-array>
     <string name="login_button_label">Login</string>
 
