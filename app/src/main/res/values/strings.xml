@@ -228,11 +228,40 @@
     <string name="question_fifteen_10">Seeds for fencing</string>
     <string name="question_fifteen_11">Spray pump</string>
 
-    <string name="question_sixteen_1">How many mango plants survived?</string>
-    <string name="question_sixteen_2">How many cashew plants survived?</string>
-    <string name="question_sixteen_3">How many hirda plants survived?</string>
-    <string name="question_sixteen_4">Do you get working charges for these plants?</string>
-    <string name="question_sixteen_5">Do you get labor charges for working for these plants</string>
+    <string name="question_fifteen_sub_1">How many mango plants survived?</string>
+    <string name="question_fifteen_sub_2">How many cashew plants survived?</string>
+    <string name="question_fifteen_sub_3">How many hirda plants survived?</string>
+    <string name="question_fifteen_sub_4">Do you get working charges for these plants?</string>
+    <string name="question_fifteen_sub_5">Do you get labor charges for working for these plants</string>
+    <string name="question_fifteen_sub_6">What kind of assistance do you get regarding horticulture other than above? (Leave blank if not applicable)</string>
+
+    <!--Interventions Regarding water resources-->
+    <string name="question_sixteen_1">Nature of ownership Common
+                    Individual</string>
+    <string name="question_sixteen_2">Own Contribution</string>
+    <string name="question_sixteen_3">Amount financed by loan</string>
+    <string name="question_sixteen_4">Source of Credit Bank -1 MFI -2
+Money lender -3
+4. Friend/Relatives
+5.Other – 888</string>
+    <string name="question_sixteen_5">Subsidy amount from TDF</string>
+    <string name="question_sixteen_6">Mode of Subsidy Transfer:
+Price Subsidy -1 DBT -2</string>
+    <string name="question_sixteen_7">Total Cost (Rs.)</string>
+    <string name="question_sixteen_8">If DBT, Number of days taken to
+receive subsidy?</string>
+    <string name="question_sixteen_9">Area covered (acres per
+implement)</string>
+    <string name="question_sixteen_10">Benefits derived from the
+implement (Codes Below)</string>
+    <string name="question_sixteen_11">Did you receive subsidy from any
+other scheme?</string>
+    <string name="question_sixteen_12">Yes---1, No---2.
+If yes mention name of the
+scheme</string>
+    <string name="question_sixteen_13">If subsidy not received, would
+you have bought this? (yes---
+1/no---2)</string>
 
     <!--Irrigation Facilities-->
     <string name="question_six_1">Owned Land</string>
@@ -319,6 +348,29 @@
     <string name="question_twentyeight_18">Restricted Choice </string>
     <string name="question_twentyeight_19">Lack of marketing support </string>
     <string name="question_twentyeight_20">Any other</string>
+    <string name="title_activity_interventions_regarding_agriculture_sub">
+        interventions_regarding_agriculture_sub
+    </string>
 
+    <!--Awareness about TDF-->
+    <string name="question_fourteen_1">How have you heard about Tribal Development Fund?</string>
+    <string-array name="question_fourteen_1_sub">
+        <item>Neighbors</item>
+        <item>News Paper</item>
+        <item>Agriculture/Horticulture Department</item>
+        <item>SAU</item>
+        <item>KVK</item>
+        <item>Input Suppliers</item>
+        <item>TV/Radio</item>
+        <item>Agri. Exhibitors</item>
+        <item>ZP/GP</item>
+        <item>Others</item>
+
+    </string-array>
+    <string name="question_fourteen_2">Did you receive any benefits from TDF?</string>
+    <string name="question_fourteen_3">In how may years have you receive any benefits from TDF in the last five years excluding this year?</string>
+    <string name="question_fourteen_4">Did you receive any benefits from any other Government Scheme in the last one year?</string>
+    <string name="question_fourteen_5">In how may years have you receive any benefits from any other Government Scheme in the last five years excluding this year?</string>
+    <string name="question_fourteen_6">In how may years have you receive any benefits from Small Farmers’ Agri-Business Consortium (SFAC)?</string>
 
 </resources>

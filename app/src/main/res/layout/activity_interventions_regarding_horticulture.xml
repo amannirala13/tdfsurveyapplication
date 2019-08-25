@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context=".InterventionsRegardingHorticultureActivity">
 
@@ -41,7 +42,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:text="@string/question_four_sub_3"
+            android:text="@string/question_fifteen_3"
             android:textSize="20sp" />
 
         <CheckBox
@@ -49,7 +50,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:text="@string/question_four_sub_4"
+            android:text="@string/question_fifteen_4"
             android:textSize="20sp" />
 
         <CheckBox
@@ -57,7 +58,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:text="@string/question_four_sub_5"
+            android:text="@string/question_fifteen_5"
             android:textSize="20sp" />
 
         <CheckBox
@@ -65,7 +66,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:text="@string/question_four_sub_6"
+            android:text="@string/question_fifteen_6"
             android:textSize="20sp" />
 
         <CheckBox
@@ -73,7 +74,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:text="@string/question_four_sub_7"
+            android:text="@string/question_fifteen_7"
             android:textSize="20sp" />
 
         <CheckBox
@@ -81,7 +82,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:text="@string/question_four_sub_8"
+            android:text="@string/question_fifteen_8"
             android:textSize="20sp" />
 
         <CheckBox
@@ -89,7 +90,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:text="@string/question_four_sub_9"
+            android:text="@string/question_fifteen_9"
             android:textSize="20sp" />
 
         <CheckBox
@@ -97,7 +98,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:text="@string/question_four_sub_10"
+            android:text="@string/question_fifteen_10"
             android:textSize="20sp" />
 
         <CheckBox
@@ -105,43 +106,198 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:text="@string/question_four_sub_11"
+            android:text="@string/question_fifteen_11"
             android:textSize="20sp" />
 
-        <CheckBox
-            android:id="@+id/farm_asset_item_12"
+        <TextView
+            android:id="@+id/respondent_name_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:text="@string/question_four_sub_12"
-            android:textSize="20sp" />
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="84dp"
+            android:text="@string/question_fifteen_sub_1"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/personal_details_label" />
 
-        <CheckBox
-            android:id="@+id/farm_asset_item_13"
+        <EditText
+            android:id="@+id/respondent_name_edit_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:text="@string/question_four_sub_13"
-            android:textSize="20sp" />
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:layout_marginRight="20dp"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toBottomOf="@+id/respondent_name_label"
+            app:layout_constraintStart_toEndOf="@+id/respondent_name_label"
+            app:layout_constraintTop_toTopOf="@+id/respondent_name_label" />
+        <TextView
+            android:id="@+id/respondent_name_label_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="84dp"
+            android:text="@string/question_fifteen_sub_2"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/personal_details_label" />
 
-        <CheckBox
-            android:id="@+id/farm_asset_item_14"
+        <EditText
+            android:id="@+id/respondent_name_edit_text_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:text="@string/question_four_sub_14"
-            android:textSize="20sp" />
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:layout_marginRight="20dp"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toBottomOf="@+id/respondent_name_label_1"
+            app:layout_constraintStart_toEndOf="@+id/respondent_name_label_1"
+            app:layout_constraintTop_toTopOf="@+id/respondent_name_label_1" />
+        <TextView
+            android:id="@+id/respondent_name_label_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="84dp"
+            android:text="@string/question_fifteen_sub_3"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/personal_details_label" />
 
-        <CheckBox
-            android:id="@+id/farm_asset_item_15"
+        <EditText
+            android:id="@+id/respondent_name_edit_text_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:text="@string/question_four_sub_15"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:layout_marginRight="20dp"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toBottomOf="@+id/respondent_name_label_2"
+            app:layout_constraintStart_toEndOf="@+id/respondent_name_label_2"
+            app:layout_constraintTop_toTopOf="@+id/respondent_name_label_2" />
+
+        <TextView
+        android:id="@+id/rating_label_financial_assistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginLeft="8dp"
+        android:text="@string/question_fifteen_sub_4"
+        android:textSize="20sp" />
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp">
+
+            <RadioGroup
+                android:id="@+id/rating_financial_assistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rating_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="yes"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/rating_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="No"
+                    android:textSize="20sp" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/rating_label_financial_assistance_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:layout_marginLeft="8dp"
+            android:text="@string/question_fifteen_sub_5"
             android:textSize="20sp" />
+        <LinearLayout
+            android:id="@+id/linearLayout_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp">
+
+            <RadioGroup
+                android:id="@+id/rating_financial_assistance_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rating_11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="None"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/rating_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Cash"
+                    android:textSize="20sp" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/rating_label_financial_assistance_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:layout_marginLeft="8dp"
+            android:text="@string/question_fifteen_sub_5"
+            android:textSize="20sp" />
+        <LinearLayout
+            android:id="@+id/linearLayout_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp">
+
+            <RadioGroup
+                android:id="@+id/rating_financial_assistance_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rating_21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="yes"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/rating_22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="No"
+                    android:textSize="20sp" />
+
+            </RadioGroup>
+        </LinearLayout>
 
         <Button
-            android:id="@+id/farm_asset_submit"
+            android:id="@+id/farm_assetmit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
