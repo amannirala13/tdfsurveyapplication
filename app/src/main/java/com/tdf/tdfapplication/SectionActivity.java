@@ -47,9 +47,10 @@ public class SectionActivity extends AppCompatActivity {
     Class<?>[] classes = {
            PersonalDetailsActivity.class,
            BasicHouseholdInformationActivity.class,
-           MainActivity.class
-    };
+            TDFConstraintsActivity.class,
+            MainActivity.class
 
+    };
     String personKey;
 
     @Override
