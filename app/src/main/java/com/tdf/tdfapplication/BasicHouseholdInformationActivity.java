@@ -220,4 +220,4 @@ public class BasicHouseholdInformationActivity extends AppCompatActivity {
 //            }
 //        });
     }
-}
+
