@@ -38,14 +38,45 @@
         app:layout_constraintVertical_bias="0.024" />
 
     <TextView
+        android:id="@+id/investigator_name_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="8dp"
+        android:text="Investigator code :"
+        android:textSize="20sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.477"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/investigator_code" />
+
+    <EditText
+        android:id="@+id/investigator_name"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="444dp"
+        android:ems="10"
+        android:hint="Enter your code here"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/investigator_name_label"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintLeft_toLeftOf="@+id/investigator_name_label"
+        app:layout_constraintTop_toBottomOf="@+id/investigator_name_label"
+        app:layout_constraintVertical_bias="0.024" />
+
+    <Spinner
         android:id="@+id/village_list"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        app:layout_constraintRight_toRightOf="@+id/investigator_code"
+        app:layout_constraintRight_toRightOf="@+id/investigator_name"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintLeft_toLeftOf="@+id/investigator_code"
-        app:layout_constraintTop_toBottomOf="@+id/investigator_code" />
+        app:layout_constraintLeft_toLeftOf="@+id/investigator_name"
+        app:layout_constraintTop_toBottomOf="@+id/investigator_name" />
 
     <Button
         android:id="@+id/surveyor_submit"
