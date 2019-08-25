@@ -48,6 +48,7 @@ public class SectionActivity extends AppCompatActivity {
            PersonalDetailsActivity.class,
            BasicHouseholdInformationActivity.class,
            FamilyDetailsBeneficiary.class,
+           AssetOwnershipActivity.class,
            MainActivity.class
     };
 
