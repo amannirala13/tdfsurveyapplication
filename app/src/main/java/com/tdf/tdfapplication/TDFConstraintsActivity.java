@@ -37,7 +37,7 @@ EditText other;
 
         other.setVisibility(View.GONE);
 
-       /* chk[19].setOnClickListener(new View.OnClickListener() {
+       chk[19].setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if(chk[19].isChecked()){
@@ -60,7 +60,7 @@ EditText other;
                     }
                 }
             }
-        });*/
+        });
         }
 
 
