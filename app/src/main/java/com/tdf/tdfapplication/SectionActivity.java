@@ -34,13 +34,13 @@ public class SectionActivity extends AppCompatActivity {
             "Intervention - Direct",
             "Intervention - Soil Conservation",
             "Intervention - Other",
+            "Environmental Benefits",
             "Applied Compost Details",
             "Community Institutions",
             "Credit Penetration & it's impact",
             "Role of Programme Implementing Agency (PIA)",
             "Other Information",
             "Constraints while availing TDF benefit",
-            "Remark",
             "Logout"
             };
 
@@ -48,7 +48,17 @@ public class SectionActivity extends AppCompatActivity {
            PersonalDetailsActivity.class,
            BasicHouseholdInformationActivity.class,
            FamilyDetailsBeneficiary.class,
-           AssetOwnershipActivity.class,
+            AssetOwnershipActivity.class,
+            WaterAndSanitationFacilityActivity.class,
+            IrrigationFacilityActivity.class,
+            AnimalHusbandryComponentsActivity.class,
+            FuelLightExpenditureActivity.class,
+            WageEmployementActivity.class,
+            DirectInterventionActivity.class,
+            SoilConservationIntervention.class,
+            OtherTDFInfoActivity.class,
+            EnvironmentalBenefitsActivity.class,
+            TDFConstraintsActivity.class,
            MainActivity.class
     };
 
