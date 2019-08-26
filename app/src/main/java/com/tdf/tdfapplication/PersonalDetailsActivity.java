@@ -28,6 +28,7 @@ public class PersonalDetailsActivity extends AppCompatActivity {
     private String name, contact, year, gender, isBeneficiary;
     private Button button;
     public static String PERSON_KEY = "ABCD";
+    String village_code;
     private ArrayList<String> yearsOfJoiningList;
 
     @Override
@@ -44,6 +45,7 @@ public class PersonalDetailsActivity extends AppCompatActivity {
         } else {
             PERSON_KEY = intent.getStringExtra("PERSON_KEY") + "1";
         }
+        village_code = intent.getStringExtra("Village_code");
 
         spinnerYear.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
@@ -72,8 +74,10 @@ public class PersonalDetailsActivity extends AppCompatActivity {
                 } else {
                     gender = "2";
                 }
-
+                //person_id  primary key,  name , gender , village , year date, contact_no )
+                String values = " '" + PERSON_KEY + "','" + name + "','" + isBeneficiary +"','"+ gender+"','"+village_code+"','" +year+"','" + contact + "'" ;
                 Log.i("INFO", year + " " + PERSON_KEY + " " + name + " " + isBeneficiary + " " + contact + " " + gender);
+
                 Intent intent = new Intent(PersonalDetailsActivity.this, SectionActivity.class);
                 finish();
             }

@@ -44,11 +44,16 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 code = editTextCode.getText().toString();
                 name = editTextName.getText().toString();
+                DBUtils dbUtils = new DBUtils();
+                dbUtils.createTables();
+                dbUtils.closeConn();
+
 
                 Log.i("INFO",code + " " + name+ " " + villageCode + villageList[Integer.parseInt(villageCode)-1].toUpperCase().substring(0,2) + name.toUpperCase().substring(0,2));
                 Intent intent = new Intent(MainActivity.this, SectionActivity.class);
 
                 intent.putExtra("PERSON_KEY",villageList[Integer.parseInt(villageCode)-1].toUpperCase().substring(0,2) + name.toUpperCase().substring(0,2));
+                intent.putExtra("Village_code",villageCode);
                 startActivity(intent);
             }
         });
