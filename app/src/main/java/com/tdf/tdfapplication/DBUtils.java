@@ -2,6 +2,7 @@ package com.tdf.tdfapplication.adapter;
 
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.util.Log;
 
 
 import static android.database.sqlite.SQLiteDatabase.openOrCreateDatabase;
@@ -11,7 +12,7 @@ public class DBUtils {
     SQLiteDatabase db=null;
     Cursor cr;
     DBUtils(){
-        db=openOrCreateDatabase("Mydata", null,null);
+        db=openOrCreateDatabase("TDFdb", null,null);
 
     }
     void createTables(){
@@ -34,6 +35,14 @@ public class DBUtils {
     }
     void closeConn(){
         db.close();
+    }
+    void displayData(String tablename){
+        cr = db.rawQuery("Select * from "+tablename,null);
+        while (cr.moveToNext()){
+            Log.i("person id:",cr.getString(1));
+
+        }
+
     }
 
 
