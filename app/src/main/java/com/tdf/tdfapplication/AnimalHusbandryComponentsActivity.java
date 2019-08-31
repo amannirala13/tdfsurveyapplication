@@ -20,7 +20,6 @@ public class AnimalHusbandryComponentsActivity extends AppCompatActivity {
     private EditText editTextSellBeforeTDF, editTextSellAfterTDF;
     private Button button;
     private TextView textViewAnimalHusbandryLabel;
-    private boolean flag = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,7 +45,7 @@ public class AnimalHusbandryComponentsActivity extends AppCompatActivity {
 
                     count = count + 1;
                     textViewAnimalHusbandryLabel.setText(animalHusbandryComponents[count]);
-                } else if (flag && countForOther < otherAnimalHusbandryComponents.length - 1) {
+                } else if ((!otherAnimalHusbandryComponents[0].equals(""))&& (countForOther < otherAnimalHusbandryComponents.length - 1) ){
                     editTextConsumptionBeforeTDF.setText("");
                     editTextConsumptionAfterTDF.setText("");
                     editTextSellBeforeTDF.setText("");
@@ -77,9 +76,6 @@ public class AnimalHusbandryComponentsActivity extends AppCompatActivity {
 
         if (bundle.containsKey("OTHER_ANIMAL_HUSBANDRY")) {
             otherAnimalHusbandryComponents = bundle.getString("OTHER_ANIMAL_HUSBANDRY").split(",");
-            if (otherAnimalHusbandryComponents.length != 0) {
-                flag = true;
-            }
         }
 
 
