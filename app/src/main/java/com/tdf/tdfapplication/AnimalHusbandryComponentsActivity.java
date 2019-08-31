@@ -7,11 +7,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import java.util.Objects;
 
 public class AnimalHusbandryComponentsActivity extends AppCompatActivity {
 
@@ -55,7 +52,7 @@ public class AnimalHusbandryComponentsActivity extends AppCompatActivity {
                     editTextSellBeforeTDF.setText("");
                     editTextSellAfterTDF.setText("");
                     countForOther = countForOther + 1;
-                    Toast.makeText(AnimalHusbandryComponentsActivity.this,otherAnimalHusbandryComponents[countForOther],Toast.LENGTH_SHORT).show();
+                    Toast.makeText(AnimalHusbandryComponentsActivity.this, otherAnimalHusbandryComponents[countForOther], Toast.LENGTH_SHORT).show();
                     textViewAnimalHusbandryLabel.setText(otherAnimalHusbandryComponents[countForOther]);
                 } else {
                     finish();
@@ -78,9 +75,9 @@ public class AnimalHusbandryComponentsActivity extends AppCompatActivity {
         animalHusbandryComponents = bundle.getStringArray("ANIMAL_HUSBANDRY_LIST");
         Toast.makeText(this, "Wahtsup?" + Integer.toString(animalHusbandryComponents.length), Toast.LENGTH_SHORT).show();
 
-        if(bundle.containsKey("OTHER_ANIMAL_HUSBANDRY")) {
+        if (bundle.containsKey("OTHER_ANIMAL_HUSBANDRY")) {
             otherAnimalHusbandryComponents = bundle.getString("OTHER_ANIMAL_HUSBANDRY").split(",");
-            if(otherAnimalHusbandryComponents.length!=0) {
+            if (otherAnimalHusbandryComponents.length != 0) {
                 flag = true;
             }
         }
