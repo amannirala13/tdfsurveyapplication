@@ -35,7 +35,8 @@
             android:text="Cow"
             android:textSize="20sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/other_asset_label" />
+            app:layout_constraintTop_toBottomOf="@+id/other_asset_label"
+            android:layout_marginLeft="16dp" />
 
         <TextView
             android:id="@+id/before_tdf_label"
@@ -49,10 +50,11 @@
             android:textSize="30sp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintStart_toStartOf="@+id/item_label"
-            app:layout_constraintTop_toBottomOf="@+id/item_label" />
+            app:layout_constraintTop_toBottomOf="@+id/item_label"
+            android:layout_marginRight="8dp" />
 
         <EditText
-            android:id="@+id/before_tdf_value"
+            android:id="@+id/other_before_tdf_value"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -60,7 +62,8 @@
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="@+id/before_tdf_label"
             app:layout_constraintStart_toEndOf="@+id/before_tdf_label"
-            app:layout_constraintTop_toTopOf="@+id/before_tdf_label" />
+            app:layout_constraintTop_toTopOf="@+id/before_tdf_label"
+            android:layout_marginLeft="16dp" />
 
         <TextView
             android:id="@+id/after_tdf_label"
@@ -74,10 +77,11 @@
             android:textSize="30sp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintStart_toStartOf="@+id/before_tdf_label"
-            app:layout_constraintTop_toBottomOf="@+id/before_tdf_value" />
+            app:layout_constraintTop_toBottomOf="@+id/other_before_tdf_value"
+            android:layout_marginRight="8dp" />
 
         <EditText
-            android:id="@+id/after_tdf_value"
+            android:id="@+id/other_after_tdf_value"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -85,87 +89,8 @@
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="@+id/after_tdf_label"
             app:layout_constraintStart_toEndOf="@+id/after_tdf_label"
-            app:layout_constraintTop_toTopOf="@+id/after_tdf_label" />
-
-        <!--<TextView-->
-            <!--android:id="@+id/family_member_income_label"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_marginTop="32dp"-->
-            <!--android:text="@string/question_four_sub_one_2"-->
-            <!--android:textSize="20sp"-->
-            <!--app:layout_constraintLeft_toLeftOf="parent"-->
-            <!--app:layout_constraintStart_toStartOf="@+id/family_member_occupation_label"-->
-            <!--app:layout_constraintTop_toBottomOf="@+id/family_member_occupation_label" />-->
-
-        <!--<EditText-->
-            <!--android:id="@+id/family_member_income"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_marginStart="16dp"-->
-            <!--android:ems="10"-->
-            <!--android:textSize="20sp"-->
-            <!--app:layout_constraintBottom_toBottomOf="@+id/family_member_income_label"-->
-            <!--app:layout_constraintStart_toEndOf="@+id/family_member_income_label"-->
-            <!--app:layout_constraintTop_toTopOf="@+id/family_member_income_label" />-->
-
-        <!--<TextView-->
-            <!--android:id="@+id/after_tdf_label"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_marginTop="32dp"-->
-            <!--android:layout_marginEnd="8dp"-->
-            <!--android:text="@string/after_tdf_label"-->
-            <!--android:textAppearance="@style/TextAppearance.AppCompat.Display2"-->
-            <!--android:textColor="#000000"-->
-            <!--android:textSize="30sp"-->
-            <!--app:layout_constraintLeft_toLeftOf="parent"-->
-            <!--app:layout_constraintStart_toStartOf="@+id/family_member_income_label"-->
-            <!--app:layout_constraintTop_toBottomOf="@+id/family_member_income_label" />-->
-
-        <!--<TextView-->
-            <!--android:id="@+id/family_member_occupation_label_after"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_marginTop="32dp"-->
-            <!--android:text="@string/question_four_sub_one_1"-->
-            <!--android:textSize="20sp"-->
-            <!--app:layout_constraintLeft_toLeftOf="parent"-->
-            <!--app:layout_constraintStart_toStartOf="@+id/after_tdf_label"-->
-            <!--app:layout_constraintTop_toBottomOf="@+id/after_tdf_label" />-->
-
-        <!--<EditText-->
-            <!--android:id="@+id/family_member_occupation_after"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_marginStart="16dp"-->
-            <!--android:ems="10"-->
-            <!--android:textSize="20sp"-->
-            <!--app:layout_constraintBottom_toBottomOf="@+id/family_member_occupation_label_after"-->
-            <!--app:layout_constraintStart_toEndOf="@+id/family_member_occupation_label_after"-->
-            <!--app:layout_constraintTop_toTopOf="@+id/family_member_occupation_label_after" />-->
-
-        <!--<TextView-->
-            <!--android:id="@+id/family_member_income_label_after"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_marginTop="32dp"-->
-            <!--android:text="@string/question_four_sub_one_2"-->
-            <!--android:textSize="20sp"-->
-            <!--app:layout_constraintLeft_toLeftOf="parent"-->
-            <!--app:layout_constraintStart_toStartOf="@+id/family_member_occupation_label_after"-->
-            <!--app:layout_constraintTop_toBottomOf="@+id/family_member_occupation_label_after" />-->
-
-        <!--<EditText-->
-            <!--android:id="@+id/family_member_income_after"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_marginStart="16dp"-->
-            <!--android:ems="10"-->
-            <!--android:textSize="20sp"-->
-            <!--app:layout_constraintBottom_toBottomOf="@+id/family_member_income_label_after"-->
-            <!--app:layout_constraintStart_toEndOf="@+id/family_member_income_label_after"-->
-            <!--app:layout_constraintTop_toTopOf="@+id/family_member_income_label_after" />-->
+            app:layout_constraintTop_toTopOf="@+id/after_tdf_label"
+            android:layout_marginLeft="16dp" />
 
         <TextView
             android:id="@+id/current_value_price_label"
@@ -179,7 +104,7 @@
             app:layout_constraintTop_toBottomOf="@+id/after_tdf_label" />
 
         <EditText
-            android:id="@+id/current_value_price"
+            android:id="@+id/other_current_value_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -187,10 +112,11 @@
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="@+id/current_value_price_label"
             app:layout_constraintStart_toEndOf="@+id/current_value_price_label"
-            app:layout_constraintTop_toTopOf="@+id/current_value_price_label" />
+            app:layout_constraintTop_toTopOf="@+id/current_value_price_label"
+            android:layout_marginLeft="16dp" />
 
         <Button
-            android:id="@+id/family_info_submit"
+            android:id="@+id/other_submit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -202,7 +128,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.466"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/current_value_price" />
+            app:layout_constraintTop_toBottomOf="@+id/other_current_value_price" />
 
     </android.support.constraint.ConstraintLayout>
 </ScrollView>

@@ -27,7 +27,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/beneficiary_occupation_label"
+            android:id="@+id/item_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -35,7 +35,8 @@
             android:text="@string/question_seven_1"
             android:textSize="20sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/animal_husbandry_component_label" />
+            app:layout_constraintTop_toBottomOf="@+id/animal_husbandry_component_label"
+            android:layout_marginLeft="16dp" />
 
         <TextView
             android:id="@+id/before_tdf_label"
@@ -48,8 +49,9 @@
             android:textColor="#000000"
             android:textSize="30sp"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/beneficiary_occupation_label"
-            app:layout_constraintTop_toBottomOf="@+id/beneficiary_occupation_label" />
+            app:layout_constraintStart_toStartOf="@+id/item_label"
+            app:layout_constraintTop_toBottomOf="@+id/item_label"
+            android:layout_marginRight="8dp" />
 
         <TextView
             android:id="@+id/for_consumption_label"
@@ -71,7 +73,8 @@
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="@+id/for_consumption_label"
             app:layout_constraintStart_toEndOf="@+id/for_consumption_label"
-            app:layout_constraintTop_toTopOf="@+id/for_consumption_label" />
+            app:layout_constraintTop_toTopOf="@+id/for_consumption_label"
+            android:layout_marginLeft="16dp" />
 
         <TextView
             android:id="@+id/for_sell_label"
@@ -93,7 +96,8 @@
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="@+id/for_sell_label"
             app:layout_constraintStart_toEndOf="@+id/for_sell_label"
-            app:layout_constraintTop_toTopOf="@+id/for_sell_label" />
+            app:layout_constraintTop_toTopOf="@+id/for_sell_label"
+            android:layout_marginLeft="16dp" />
 
         <TextView
             android:id="@+id/after_tdf_label"
@@ -107,7 +111,8 @@
             android:textSize="30sp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintStart_toStartOf="@+id/for_sell_label"
-            app:layout_constraintTop_toBottomOf="@+id/for_sell_label" />
+            app:layout_constraintTop_toBottomOf="@+id/for_sell_label"
+            android:layout_marginRight="8dp" />
 
         <TextView
             android:id="@+id/for_consumption_label_after"
@@ -129,7 +134,8 @@
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="@+id/for_consumption_label_after"
             app:layout_constraintStart_toEndOf="@+id/for_consumption_label_after"
-            app:layout_constraintTop_toTopOf="@+id/for_consumption_label_after" />
+            app:layout_constraintTop_toTopOf="@+id/for_consumption_label_after"
+            android:layout_marginLeft="16dp" />
 
         <TextView
             android:id="@+id/for_sell_label_after"
@@ -151,10 +157,11 @@
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="@+id/for_sell_label_after"
             app:layout_constraintStart_toEndOf="@+id/for_sell_label_after"
-            app:layout_constraintTop_toTopOf="@+id/for_sell_label_after" />
+            app:layout_constraintTop_toTopOf="@+id/for_sell_label_after"
+            android:layout_marginLeft="16dp" />
 
         <Button
-            android:id="@+id/family_info_submit"
+            android:id="@+id/animal_husbandry_component_info_submit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"

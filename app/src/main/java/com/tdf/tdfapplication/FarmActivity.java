@@ -52,7 +52,7 @@ public class FarmActivity extends AppCompatActivity {
     private void initialize() {
         checkBoxes = new CheckBox[15];
         linearLayout = findViewById(R.id.linearLayout);
-        farmAssets = new String[15];
+        farmAssets = new String[checkBoxes.length];
         button = findViewById(R.id.farm_asset_submit);
     }
 }

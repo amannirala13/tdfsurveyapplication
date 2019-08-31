@@ -27,7 +27,8 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:text="@string/question_four_sub_21"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:layout_marginLeft="8dp" />
 
         <CheckBox
             android:id="@+id/other_asset_item_2"
@@ -35,7 +36,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:text="@string/question_four_sub_22"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:layout_marginLeft="8dp" />
 
         <CheckBox
             android:id="@+id/other_asset_item_3"
@@ -43,7 +45,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:text="@string/question_four_sub_23"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:layout_marginLeft="8dp" />
 
         <CheckBox
             android:id="@+id/other_asset_item_4"
@@ -51,7 +54,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:text="@string/question_four_sub_24"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:layout_marginLeft="8dp" />
 
         <CheckBox
             android:id="@+id/other_asset_item_5"
@@ -59,7 +63,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:text="@string/question_four_sub_25"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:layout_marginLeft="8dp" />
 
         <CheckBox
             android:id="@+id/other_asset_item_6"
@@ -67,7 +72,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:text="@string/question_four_sub_26"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:layout_marginLeft="8dp" />
 
         <CheckBox
             android:id="@+id/other_asset_item_7"
@@ -75,7 +81,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:text="@string/question_four_sub_27"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:layout_marginLeft="8dp" />
 
         <CheckBox
             android:id="@+id/other_asset_item_8"
@@ -83,7 +90,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:text="@string/question_four_sub_28"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:layout_marginLeft="8dp" />
 
         <CheckBox
             android:id="@+id/other_asset_item_9"
@@ -91,7 +99,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:text="@string/question_four_sub_29"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:layout_marginLeft="8dp" />
 
         <CheckBox
             android:id="@+id/other_asset_item_10"
@@ -99,7 +108,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:text="@string/question_four_sub_30"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:layout_marginLeft="8dp" />
 
         <CheckBox
             android:id="@+id/other_asset_item_11"
@@ -107,7 +117,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:text="@string/question_four_sub_31"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:layout_marginLeft="8dp" />
 
         <CheckBox
             android:id="@+id/other_asset_item_12"
@@ -115,7 +126,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:text="@string/question_four_sub_32"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:layout_marginLeft="8dp" />
 
         <CheckBox
             android:id="@+id/other_asset_item_13"
@@ -123,7 +135,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:text="@string/question_four_sub_33"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:layout_marginLeft="8dp" />
 
         <CheckBox
             android:id="@+id/other_asset_item_14"
@@ -131,7 +144,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:text="@string/question_four_sub_34"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:layout_marginLeft="8dp" />
 
         <CheckBox
             android:id="@+id/other_asset_item_15"
@@ -139,28 +153,32 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:text="@string/question_four_sub_35"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:layout_marginLeft="8dp" />
         <CheckBox
             android:id="@+id/other_asset_item_16"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:text="@string/question_four_sub_36"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:layout_marginLeft="8dp" />
         <CheckBox
             android:id="@+id/other_asset_item_17"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:text="@string/question_four_sub_37"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:layout_marginLeft="8dp" />
         <CheckBox
             android:id="@+id/other_asset_item_18"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:text="@string/question_four_sub_38"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:layout_marginLeft="8dp" />
 
         <Button
             android:id="@+id/other_asset_submit"

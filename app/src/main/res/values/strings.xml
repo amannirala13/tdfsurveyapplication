@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">tdfsurveyapplication</string>
+
+    <!--general strings-->
+    <string name="comments_label">Any comments</string>
     <string name="investigator_code_label">Enter Investigator Code:</string>
     <string-array name="village_list">
         <item>Rajur</item>
@@ -204,6 +207,7 @@
     <string name="question_five_1_one_1_four">Others(please specify)</string>
 
     <!--Animal Husbandry Components-->
+    <string name="question_seven">Choose owned Animal Husbandry Components</string>
     <string name="question_seven_1">Milk</string>
     <string name="question_seven_2">Meat</string>
     <string name="question_seven_3">Eggs</string>

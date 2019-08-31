@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -61,11 +60,11 @@ public class FarmAssetDetails extends AppCompatActivity {
         values = new String[4];
 
         textViewfarmAssetLabel = findViewById(R.id.item_label);
-        button = findViewById(R.id.family_info_submit);
-        editTextIJAfterTDF = findViewById(R.id.family_member_occupation_after);
-        editTextNoAfterTDF = findViewById(R.id.family_member_income_after);
-        editTextIJBeforeTDF = findViewById(R.id.family_member_occupation);
-        editTextNoBeforeTDF = findViewById(R.id.family_member_income);
+        button = findViewById(R.id.wage_info_submit);
+        editTextIJAfterTDF = findViewById(R.id.number_of_days_after);
+        editTextNoAfterTDF = findViewById(R.id.wage_value_after);
+        editTextIJBeforeTDF = findViewById(R.id.wage_number_of_days);
+        editTextNoBeforeTDF = findViewById(R.id.wage_value);
 
     }
 
