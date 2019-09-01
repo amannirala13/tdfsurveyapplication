@@ -40,6 +40,7 @@ public class SectionActivity extends AppCompatActivity {
             "Role of Programme Implementing Agency (PIA)",
             "Other Information",
             "Constraints while availing TDF benefit",
+            "Add data to Google Sheets",
             "Logout"
     };
 
@@ -49,11 +50,10 @@ public class SectionActivity extends AppCompatActivity {
             FamilyDetailsBeneficiary.class,
             AssetOwnershipActivity.class,
             WaterAndSanitationFacilityActivity.class,
-            IrrigationFacilityActivity.class,
+            IrrigationListActivity.class,
             MainActivity.class,//            "Cost Benefit Analysis from Crop Cultivation",
             AnimalHusbandryList.class,
             MainActivity.class,//            "Other Income-Generating Activities",
-
             FuelLightExpenditureActivity.class,
             MainActivity.class,//"Agriculture Fuel and Light Expenditure",
             MainActivity.class,//"Food Availibility Analysis",
