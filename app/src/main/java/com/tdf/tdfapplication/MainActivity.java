@@ -35,6 +35,7 @@ import com.google.api.client.util.ExponentialBackOff;
 import com.google.api.services.sheets.v4.SheetsScopes;
 import com.google.api.services.sheets.v4.model.AppendValuesResponse;
 import com.google.api.services.sheets.v4.model.ValueRange;
+import com.tdf.tdfapplication.Data.DBManager;
 
 import java.io.IOException;
 import java.text.DateFormat;
@@ -66,6 +67,7 @@ public class MainActivity extends AppCompatActivity{
 //
 //    private static final String[] SCOPES = {SheetsScopes.SPREADSHEETS};
 
+
     private Button button;
     private Spinner spinner;
     private String code;
@@ -75,7 +77,7 @@ public class MainActivity extends AppCompatActivity{
     private EditText editTextCode;
     private EditText editTextName;
     private String[] villageList;
-
+    private DBManager dbManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -99,7 +101,9 @@ public class MainActivity extends AppCompatActivity{
             public void onClick(View v) {
                 code = editTextCode.getText().toString();
                 name = editTextName.getText().toString();
-
+                dbManager.open();
+                dbManager.setCREATE_TABLE("person_id","name","village");
+                dbManager.insert(code,name,villageCode);
                 Log.i("INFO", code + " " + name + " " + villageCode + villageList[Integer.parseInt(villageCode) - 1].toUpperCase().substring(0, 2) + name.toUpperCase().substring(0, 2));
 
                 Intent intent = new Intent(MainActivity.this, SectionActivity.class);
@@ -126,7 +130,7 @@ public class MainActivity extends AppCompatActivity{
         editTextCode = findViewById(R.id.investigator_code);
         editTextName = findViewById(R.id.investigator_name);
         button = findViewById(R.id.surveyor_submit);
-
+        dbManager = new DBManager(this,"surveyer_details");
         villageList = getResources().getStringArray(R.array.village_list);
 
         ArrayAdapter<?> arrayAdapter = ArrayAdapter.createFromResource(this,
