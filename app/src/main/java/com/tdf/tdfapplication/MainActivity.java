@@ -53,7 +53,6 @@ public class MainActivity extends AppCompatActivity {
                 dbManager.open();
                 dbManager.insert(code,name,villageCode);
 
-
                 //Intent
                 Intent intent = new Intent(MainActivity.this, SectionActivity.class);
 
