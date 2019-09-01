@@ -176,7 +176,7 @@
             app:layout_constraintTop_toTopOf="@+id/family_member_count_label" />
 
         <Button
-            android:id="@+id/wage_info_submit"
+            android:id="@+id/asset_info_submit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
