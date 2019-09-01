@@ -75,5 +75,6 @@ public class MainActivity extends AppCompatActivity {
                 R.array.village_list, android.R.layout.simple_spinner_item);
         spinner.setAdapter(arrayAdapter);
 
+
     }
 }
