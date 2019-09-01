@@ -1,8 +1,8 @@
 package com.tdf.tdfapplication;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
@@ -29,7 +29,7 @@ public class AssetOwnershipActivity extends AppCompatActivity {
         textViewOther.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(AssetOwnershipActivity.this,OtherActivityList.class);
+                Intent intent = new Intent(AssetOwnershipActivity.this, OtherActivityList.class);
                 startActivity(intent);
             }
         });

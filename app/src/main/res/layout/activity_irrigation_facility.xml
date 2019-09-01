@@ -35,7 +35,8 @@
             android:text="@string/question_six_1"
             android:textSize="20sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/irrigation_facility_label" />
+            app:layout_constraintTop_toBottomOf="@+id/irrigation_facility_label"
+            android:layout_marginLeft="16dp" />
 
         <TextView
             android:id="@+id/before_tdf_label"
@@ -49,7 +50,8 @@
             android:textSize="30sp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintStart_toStartOf="@+id/land_holding_label"
-            app:layout_constraintTop_toBottomOf="@+id/land_holding_label" />
+            app:layout_constraintTop_toBottomOf="@+id/land_holding_label"
+            android:layout_marginRight="8dp" />
 
         <EditText
             android:id="@+id/land_value_unit"
@@ -60,7 +62,8 @@
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="@+id/before_tdf_label"
             app:layout_constraintStart_toEndOf="@+id/before_tdf_label"
-            app:layout_constraintTop_toTopOf="@+id/before_tdf_label" />
+            app:layout_constraintTop_toTopOf="@+id/before_tdf_label"
+            android:layout_marginLeft="16dp" />
 
         <TextView
             android:id="@+id/after_tdf_label"
@@ -74,7 +77,8 @@
             android:textSize="30sp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintStart_toStartOf="@+id/before_tdf_label"
-            app:layout_constraintTop_toBottomOf="@+id/before_tdf_label" />
+            app:layout_constraintTop_toBottomOf="@+id/before_tdf_label"
+            android:layout_marginRight="8dp" />
 
         <EditText
             android:id="@+id/land_value_unit_after"
@@ -85,7 +89,8 @@
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="@+id/after_tdf_label"
             app:layout_constraintStart_toEndOf="@+id/after_tdf_label"
-            app:layout_constraintTop_toTopOf="@+id/after_tdf_label" />
+            app:layout_constraintTop_toTopOf="@+id/after_tdf_label"
+            android:layout_marginLeft="16dp" />
 
         <TextView
             android:id="@+id/land_value_price_label"
@@ -103,11 +108,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:ems="3"
+            android:ems="10"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="@+id/land_value_price_label"
             app:layout_constraintStart_toEndOf="@+id/land_value_price_label"
-            app:layout_constraintTop_toTopOf="@+id/land_value_price_label" />
+            app:layout_constraintTop_toTopOf="@+id/land_value_price_label"
+            android:layout_marginLeft="16dp" />
 
         <Button
             android:id="@+id/irrigation_info_submit"

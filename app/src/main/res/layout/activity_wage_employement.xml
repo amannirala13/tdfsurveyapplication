@@ -38,10 +38,11 @@
             android:textSize="30sp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/wage_employment_label" />
+            app:layout_constraintTop_toBottomOf="@+id/wage_employment_label"
+            android:layout_marginLeft="28dp" />
 
         <TextView
-            android:id="@+id/family_member_occupation_label"
+            android:id="@+id/wage_number_of_days_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
@@ -52,33 +53,33 @@
             app:layout_constraintTop_toBottomOf="@+id/before_tdf_label" />
 
         <EditText
-            android:id="@+id/family_member_occupation"
+            android:id="@+id/wage_number_of_days"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
             android:textSize="20sp"
-            app:layout_constraintStart_toStartOf="@+id/family_member_occupation_label"
-            app:layout_constraintTop_toBottomOf="@+id/family_member_occupation_label" />
+            app:layout_constraintStart_toStartOf="@+id/wage_number_of_days_label"
+            app:layout_constraintTop_toBottomOf="@+id/wage_number_of_days_label" />
 
         <TextView
-            android:id="@+id/family_member_income_label"
+            android:id="@+id/wage_value_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
             android:text="@string/question_twelve_2"
             android:textSize="20sp"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/family_member_occupation"
-            app:layout_constraintTop_toBottomOf="@+id/family_member_occupation" />
+            app:layout_constraintStart_toStartOf="@+id/wage_number_of_days"
+            app:layout_constraintTop_toBottomOf="@+id/wage_number_of_days" />
 
         <EditText
-            android:id="@+id/family_member_income"
+            android:id="@+id/wage_value"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
             android:textSize="20sp"
-            app:layout_constraintStart_toStartOf="@+id/family_member_income_label"
-            app:layout_constraintTop_toBottomOf="@+id/family_member_income_label" />
+            app:layout_constraintStart_toStartOf="@+id/wage_value_label"
+            app:layout_constraintTop_toBottomOf="@+id/wage_value_label" />
 
         <TextView
             android:id="@+id/after_tdf_label"
@@ -92,10 +93,11 @@
             android:textSize="30sp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/family_member_income" />
+            app:layout_constraintTop_toBottomOf="@+id/wage_value"
+            android:layout_marginLeft="28dp" />
 
         <TextView
-            android:id="@+id/comments"
+            android:id="@+id/wage_number_of_days_label_after"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
@@ -106,37 +108,58 @@
             app:layout_constraintTop_toBottomOf="@+id/after_tdf_label" />
 
         <EditText
-            android:id="@+id/family_member_occupation_after"
+            android:id="@+id/number_of_days_after"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
             android:textSize="20sp"
-            app:layout_constraintStart_toStartOf="@+id/comments"
-            app:layout_constraintTop_toBottomOf="@+id/comments" />
+            app:layout_constraintStart_toStartOf="@+id/wage_number_of_days_label_after"
+            app:layout_constraintTop_toBottomOf="@+id/wage_number_of_days_label_after" />
 
         <TextView
-            android:id="@+id/family_member_income_label_after"
+            android:id="@+id/wage_value_label_after"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
             android:text="@string/question_twelve_2"
             android:textSize="20sp"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/family_member_occupation_after"
-            app:layout_constraintTop_toBottomOf="@+id/family_member_occupation_after" />
+            app:layout_constraintStart_toStartOf="@+id/number_of_days_after"
+            app:layout_constraintTop_toBottomOf="@+id/number_of_days_after" />
 
         <EditText
-            android:id="@+id/family_member_income_after"
+            android:id="@+id/wage_value_after"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
             android:textSize="20sp"
-            app:layout_constraintStart_toStartOf="@+id/family_member_income_label_after"
-            app:layout_constraintTop_toBottomOf="@+id/family_member_income_label_after" />
+            app:layout_constraintStart_toStartOf="@+id/wage_value_label_after"
+            app:layout_constraintTop_toBottomOf="@+id/wage_value_label_after" />
+
+        <TextView
+            android:id="@+id/wage_comments_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/comments_label"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/wage_value_after"
+            app:layout_constraintTop_toBottomOf="@+id/wage_value_after" />
+
+        <EditText
+            android:id="@+id/wage_comments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textSize="20sp"
+            android:inputType="textMultiLine"
+            app:layout_constraintStart_toStartOf="@+id/wage_comments_label"
+            app:layout_constraintTop_toBottomOf="@+id/wage_comments_label" />
 
 
         <Button
-            android:id="@+id/family_info_submit"
+            android:id="@+id/wage_info_submit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -148,6 +171,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.466"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/family_member_income_after" />
+            app:layout_constraintTop_toBottomOf="@+id/wage_comments" />
     </android.support.constraint.ConstraintLayout>
 </ScrollView>

@@ -9,359 +9,429 @@
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-    <TextView
-        android:id="@+id/water_sanitation_facility_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="52dp"
-        android:layout_marginEnd="8dp"
-        android:text="Water And Sanitation Facilities"
-        android:textColor="#000000"
-        android:textSize="40sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/drinking_water_facility_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="76dp"
-        android:text="@string/question_five_1"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/water_sanitation_facility_label" />
-
-    <TextView
-        android:id="@+id/before_tdf_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="8dp"
-        android:text="@string/before_tdf_label"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-        android:textColor="#000000"
-        android:textSize="30sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/drinking_water_facility_label"
-        app:layout_constraintTop_toBottomOf="@+id/drinking_water_facility_label" />
-
-    <Spinner
-        android:id="@+id/water_resource_value"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/before_tdf_label"
-        app:layout_constraintStart_toEndOf="@+id/before_tdf_label"
-        app:layout_constraintTop_toTopOf="@+id/before_tdf_label" />
-
-    <TextView
-        android:id="@+id/water_source_distance"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="8dp"
-        android:text="@string/question_five_one_1"
-        android:textSize="20sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/before_tdf_label"
-        app:layout_constraintTop_toBottomOf="@+id/before_tdf_label" />
-
-    <Spinner
-        android:id="@+id/water_distance"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/water_source_distance"
-        app:layout_constraintStart_toEndOf="@+id/water_source_distance"
-        app:layout_constraintTop_toTopOf="@+id/water_source_distance" />
-
-    <TextView
-        android:id="@+id/other_distance_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="8dp"
-        android:text="Distance (In km)"
-        android:textSize="20sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/water_source_distance"
-        app:layout_constraintTop_toBottomOf="@+id/water_source_distance" />
-
-    <EditText
-        android:id="@+id/other_distance"
-        android:layout_width="172dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:minEms="10"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/other_distance_label"
-        app:layout_constraintStart_toEndOf="@+id/other_distance_label"
-        app:layout_constraintTop_toTopOf="@+id/other_distance_label" />
-
-    <TextView
-        android:id="@+id/fetch_water_member_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="8dp"
-        android:text="@string/question_five_one_2"
-        android:textSize="20sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/other_distance_label"
-        app:layout_constraintTop_toBottomOf="@+id/other_distance_label" />
-
-    <EditText
-        android:id="@+id/fetch_water_member"
-        android:layout_width="172dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:minEms="10"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/fetch_water_member_label"
-        app:layout_constraintStart_toEndOf="@+id/fetch_water_member_label"
-        app:layout_constraintTop_toTopOf="@+id/fetch_water_member_label" />
-
-    <TextView
-        android:id="@+id/toilet_facility_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:text="@string/question_five_2"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="@+id/fetch_water_member_label"
-        app:layout_constraintTop_toBottomOf="@+id/fetch_water_member_label" />
-
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="26dp"
-        app:layout_constraintStart_toEndOf="@+id/toilet_facility_label"
-        app:layout_constraintTop_toBottomOf="@+id/fetch_water_member_label">
-
-        <RadioGroup
-            android:id="@+id/toilet_flag"
+        <TextView
+            android:id="@+id/water_sanitation_facility_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="8dp"
+            android:text="Water And Sanitation Facilities"
+            android:textColor="#000000"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-            <RadioButton
-                android:id="@+id/toilet_yes"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:checked="true"
-                android:textSize="20sp" />
-
-            <RadioButton
-                android:id="@+id/toilet_no"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:text="No"
-                android:checked="true"
-                android:textSize="20sp" />
-        </RadioGroup>
-    </LinearLayout>
-
-    <TextView
-        android:id="@+id/toilet_usage_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="8dp"
-        android:text="@string/question_five_two_1"
-        android:textSize="20sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/toilet_facility_label"
-        app:layout_constraintTop_toBottomOf="@+id/toilet_facility_label" />
-
-    <EditText
-        android:id="@+id/toilet_usage"
-        android:layout_width="172dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:minEms="10"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/toilet_usage_label"
-        app:layout_constraintStart_toEndOf="@+id/toilet_usage_label"
-        app:layout_constraintTop_toTopOf="@+id/toilet_usage_label" />
-
-    <TextView
-        android:id="@+id/after_tdf_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="8dp"
-        android:text="@string/after_tdf_label"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-        android:textColor="#000000"
-        android:textSize="30sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/toilet_usage_label"
-        app:layout_constraintTop_toBottomOf="@+id/toilet_usage" />
-
-    <Spinner
-        android:id="@+id/water_resource_value_after"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/after_tdf_label"
-        app:layout_constraintStart_toEndOf="@+id/after_tdf_label"
-        app:layout_constraintTop_toTopOf="@+id/after_tdf_label" />
-
-    <TextView
-        android:id="@+id/water_source_distance_after"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="8dp"
-        android:text="@string/question_five_one_1"
-        android:textSize="20sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/after_tdf_label"
-        app:layout_constraintTop_toBottomOf="@+id/after_tdf_label" />
-
-    <Spinner
-        android:id="@+id/water_distance_after"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/water_source_distance_after"
-        app:layout_constraintStart_toEndOf="@+id/water_source_distance_after"
-        app:layout_constraintTop_toTopOf="@+id/water_source_distance_after" />
-
-    <TextView
-        android:id="@+id/other_distance_label_after"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="8dp"
-        android:text="Distance (In km)"
-        android:textSize="20sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/water_source_distance_after"
-        app:layout_constraintTop_toBottomOf="@+id/water_source_distance_after" />
-
-    <EditText
-        android:id="@+id/other_distance_after"
-        android:layout_width="172dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:minEms="10"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/other_distance_label_after"
-        app:layout_constraintStart_toEndOf="@+id/other_distance_label_after"
-        app:layout_constraintTop_toTopOf="@+id/other_distance_label_after" />
-
-    <TextView
-        android:id="@+id/fetch_water_member_label_after"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="8dp"
-        android:text="@string/question_five_one_2"
-        android:textSize="20sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/other_distance_label_after"
-        app:layout_constraintTop_toBottomOf="@+id/other_distance_label_after" />
-
-    <EditText
-        android:id="@+id/fetch_water_member_after"
-        android:layout_width="172dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:minEms="10"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/fetch_water_member_label_after"
-        app:layout_constraintStart_toEndOf="@+id/fetch_water_member_label_after"
-        app:layout_constraintTop_toTopOf="@+id/fetch_water_member_label_after" />
-
-    <TextView
-        android:id="@+id/toilet_facility_label_after"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:text="@string/question_five_2"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="@+id/fetch_water_member_label_after"
-        app:layout_constraintTop_toBottomOf="@+id/fetch_water_member_label_after" />
-
-    <LinearLayout
-        android:id="@+id/linearLayout_after"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="26dp"
-        app:layout_constraintStart_toEndOf="@+id/toilet_facility_label_after"
-        app:layout_constraintTop_toBottomOf="@+id/fetch_water_member_label_after">
-
-        <RadioGroup
-            android:id="@+id/toilet_flag_after"
+        <TextView
+            android:id="@+id/drinking_water_facility_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="76dp"
+            android:text="@string/question_five_1"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/water_sanitation_facility_label" />
 
-            <RadioButton
-                android:id="@+id/toilet_yes_after"
+        <TextView
+            android:id="@+id/before_tdf_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/before_tdf_label"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/drinking_water_facility_label"
+            app:layout_constraintTop_toBottomOf="@+id/drinking_water_facility_label" />
+
+        <Spinner
+            android:id="@+id/water_resource_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="@+id/before_tdf_label"
+            app:layout_constraintStart_toEndOf="@+id/before_tdf_label"
+            app:layout_constraintTop_toTopOf="@+id/before_tdf_label" />
+
+        <TextView
+            android:id="@+id/other_resource_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            android:text="Other:"
+            android:textSize="20sp"
+            android:visibility="gone"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/before_tdf_label"
+            app:layout_constraintTop_toBottomOf="@+id/before_tdf_label" />
+
+        <EditText
+            android:id="@+id/other_resource"
+            android:layout_width="172dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:minEms="10"
+            android:textSize="20sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/other_resource_label"
+            app:layout_constraintStart_toEndOf="@+id/other_resource_label"
+            app:layout_constraintTop_toTopOf="@+id/other_resource_label" />
+
+        <TextView
+            android:id="@+id/water_source_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/question_five_one_1"
+            android:textSize="20sp"
+            android:visibility="gone"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/other_resource_label"
+            app:layout_constraintTop_toBottomOf="@+id/other_resource_label" />
+
+        <Spinner
+            android:id="@+id/water_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:textSize="20sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/water_source_distance"
+            app:layout_constraintStart_toEndOf="@+id/water_source_distance"
+            app:layout_constraintTop_toTopOf="@+id/water_source_distance" />
+
+        <TextView
+            android:id="@+id/other_distance_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            android:text="Other:"
+            android:textSize="20sp"
+            android:visibility="gone"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/water_source_distance"
+            app:layout_constraintTop_toBottomOf="@+id/water_source_distance" />
+
+        <EditText
+            android:id="@+id/other_distance"
+            android:layout_width="172dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:minEms="10"
+            android:textSize="20sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/other_distance_label"
+            app:layout_constraintStart_toEndOf="@+id/other_distance_label"
+            app:layout_constraintTop_toTopOf="@+id/other_distance_label" />
+
+        <TextView
+            android:id="@+id/fetch_water_member_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/question_five_one_2"
+            android:textSize="20sp"
+            android:visibility="gone"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/other_distance_label"
+            app:layout_constraintTop_toBottomOf="@+id/other_distance_label" />
+
+        <Spinner
+            android:id="@+id/fetch_water_member"
+            android:layout_width="172dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:minEms="10"
+            android:textSize="20sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/fetch_water_member_label"
+            app:layout_constraintStart_toEndOf="@+id/fetch_water_member_label"
+            app:layout_constraintTop_toTopOf="@+id/fetch_water_member_label" />
+
+        <TextView
+            android:id="@+id/toilet_facility_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="@string/question_five_2"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/fetch_water_member_label"
+            app:layout_constraintTop_toBottomOf="@+id/fetch_water_member_label" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="26dp"
+            app:layout_constraintStart_toEndOf="@+id/toilet_facility_label"
+            app:layout_constraintTop_toBottomOf="@+id/fetch_water_member_label">
+
+            <RadioGroup
+                android:id="@+id/toilet_flag"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Yes"
-                android:textSize="20sp" />
+                android:orientation="horizontal">
 
-            <RadioButton
-                android:id="@+id/toilet_no_after"
+                <RadioButton
+                    android:id="@+id/toilet_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Yes"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/toilet_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:checked="true"
+                    android:text="No"
+                    android:textSize="20sp" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/toilet_usage_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/question_five_two_1"
+            android:textSize="20sp"
+            android:visibility="gone"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/toilet_facility_label"
+            app:layout_constraintTop_toBottomOf="@+id/toilet_facility_label" />
+
+        <EditText
+            android:id="@+id/toilet_usage"
+            android:layout_width="172dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:minEms="10"
+            android:textSize="20sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/toilet_usage_label"
+            app:layout_constraintStart_toEndOf="@+id/toilet_usage_label"
+            app:layout_constraintTop_toTopOf="@+id/toilet_usage_label" />
+
+        <TextView
+            android:id="@+id/after_tdf_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/after_tdf_label"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/toilet_usage_label"
+            app:layout_constraintTop_toBottomOf="@+id/toilet_usage" />
+
+        <Spinner
+            android:id="@+id/water_resource_value_after"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="@+id/after_tdf_label"
+            app:layout_constraintStart_toEndOf="@+id/after_tdf_label"
+            app:layout_constraintTop_toTopOf="@+id/after_tdf_label" />
+
+        <TextView
+            android:id="@+id/other_resource_label_after"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            android:text="Other:"
+            android:textSize="20sp"
+            android:visibility="gone"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/after_tdf_label"
+            app:layout_constraintTop_toBottomOf="@+id/after_tdf_label" />
+
+        <EditText
+            android:id="@+id/other_resource_after"
+            android:layout_width="172dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:minEms="10"
+            android:textSize="20sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/other_resource_label_after"
+            app:layout_constraintStart_toEndOf="@+id/other_resource_label_after"
+            app:layout_constraintTop_toTopOf="@+id/other_resource_label_after" />
+
+        <TextView
+            android:id="@+id/water_source_distance_after"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/question_five_one_1"
+            android:textSize="20sp"
+            android:visibility="gone"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/other_resource_label_after"
+            app:layout_constraintTop_toBottomOf="@+id/other_resource_label_after" />
+
+        <Spinner
+            android:id="@+id/water_distance_after"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:textSize="20sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/water_source_distance_after"
+            app:layout_constraintStart_toEndOf="@+id/water_source_distance_after"
+            app:layout_constraintTop_toTopOf="@+id/water_source_distance_after" />
+
+        <TextView
+            android:id="@+id/other_distance_label_after"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            android:text="Other:"
+            android:textSize="20sp"
+            android:visibility="gone"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/water_source_distance_after"
+            app:layout_constraintTop_toBottomOf="@+id/water_source_distance_after" />
+
+        <EditText
+            android:id="@+id/other_distance_after"
+            android:layout_width="172dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:minEms="10"
+            android:textSize="20sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/other_distance_label_after"
+            app:layout_constraintStart_toEndOf="@+id/other_distance_label_after"
+            app:layout_constraintTop_toTopOf="@+id/other_distance_label_after" />
+
+        <TextView
+            android:id="@+id/fetch_water_member_label_after"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/question_five_one_2"
+            android:textSize="20sp"
+            android:visibility="gone"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/other_distance_label_after"
+            app:layout_constraintTop_toBottomOf="@+id/other_distance_label_after" />
+
+        <Spinner
+            android:id="@+id/fetch_water_member_after"
+            android:layout_width="172dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:minEms="10"
+            android:textSize="20sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/fetch_water_member_label_after"
+            app:layout_constraintStart_toEndOf="@+id/fetch_water_member_label_after"
+            app:layout_constraintTop_toTopOf="@+id/fetch_water_member_label_after" />
+
+        <TextView
+            android:id="@+id/toilet_facility_label_after"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="@string/question_five_2"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/fetch_water_member_label_after"
+            app:layout_constraintTop_toBottomOf="@+id/fetch_water_member_label_after" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout_after"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="26dp"
+            app:layout_constraintStart_toEndOf="@+id/toilet_facility_label_after"
+            app:layout_constraintTop_toBottomOf="@+id/fetch_water_member_label_after">
+
+            <RadioGroup
+                android:id="@+id/toilet_flag_after"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:text="No"
-                android:checked="true"
-                android:textSize="20sp" />
-        </RadioGroup>
-    </LinearLayout>
+                android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/toilet_usage_label_after"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="8dp"
-        android:text="@string/question_five_two_1"
-        android:textSize="20sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/toilet_facility_label_after"
-        app:layout_constraintTop_toBottomOf="@+id/toilet_facility_label_after" />
+                <RadioButton
+                    android:id="@+id/toilet_yes_after"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:textSize="20sp" />
 
-    <EditText
-        android:id="@+id/toilet_usage_after"
-        android:layout_width="172dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:minEms="10"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/toilet_usage_label_after"
-        app:layout_constraintStart_toEndOf="@+id/toilet_usage_label_after"
-        app:layout_constraintTop_toTopOf="@+id/toilet_usage_label_after" />
+                <RadioButton
+                    android:id="@+id/toilet_no_after"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:checked="true"
+                    android:text="No"
+                    android:textSize="20sp" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/toilet_usage_label_after"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/question_five_two_1"
+            android:textSize="20sp"
+            android:visibility="gone"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/toilet_facility_label_after"
+            app:layout_constraintTop_toBottomOf="@+id/toilet_facility_label_after" />
+
+        <EditText
+            android:id="@+id/toilet_usage_after"
+            android:layout_width="172dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:minEms="10"
+            android:textSize="20sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/toilet_usage_label_after"
+            app:layout_constraintStart_toEndOf="@+id/toilet_usage_label_after"
+            app:layout_constraintTop_toTopOf="@+id/toilet_usage_label_after" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/sanitation_info_submit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="76dp"
             android:layout_marginEnd="8dp"
+            android:layout_marginBottom="30dp"
             android:background="@color/colorBlack"
             android:text="next"
             android:textColor="#ffffff"
             android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"

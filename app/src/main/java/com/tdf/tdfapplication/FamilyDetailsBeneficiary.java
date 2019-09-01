@@ -40,11 +40,11 @@ public class FamilyDetailsBeneficiary extends AppCompatActivity {
     }
 
     private void initialize(){
-        editTextAfterTDFMajor = findViewById(R.id.family_member_occupation_after);
-        editTextAfterTDFMinor = findViewById(R.id.family_member_income_after);
-        editTextBeforeTDFMajor = findViewById(R.id.family_member_occupation);
-        editTextBeforeTDFMinor = findViewById(R.id.family_member_income);
+        editTextAfterTDFMajor = findViewById(R.id.number_of_days_after);
+        editTextAfterTDFMinor = findViewById(R.id.wage_value_after);
+        editTextBeforeTDFMajor = findViewById(R.id.wage_number_of_days);
+        editTextBeforeTDFMinor = findViewById(R.id.wage_value);
         editTextNumberOfMembers = findViewById(R.id.family_member_count);
-        button = findViewById(R.id.family_info_submit);
+        button = findViewById(R.id.wage_info_submit);
     }
 }

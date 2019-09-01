@@ -19,7 +19,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="52dp"
             android:layout_marginEnd="8dp"
-            android:text="Basic HouseHold Details"
+            android:text="Environmental Benefits"
             android:textColor="#000000"
             android:textSize="40sp"
             android:textStyle="bold"

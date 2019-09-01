@@ -64,12 +64,12 @@ public class FamilyDetailsActivity extends AppCompatActivity {
         editTextName = findViewById(R.id.family_member_name);
         editTextAge = findViewById(R.id.family_member_age);
         editTextEducation = findViewById(R.id.family_member_education);
-        editTextIncomeBeforeTDF = findViewById(R.id.family_member_income);
-        editTextOccupationBeforeTDF = findViewById(R.id.family_member_occupation);
-        editTextIncomeAfterTDF = findViewById(R.id.family_member_income_after);
-        editTextOccupationAfterTDF = findViewById(R.id.family_member_occupation_after);
+        editTextIncomeBeforeTDF = findViewById(R.id.wage_value);
+        editTextOccupationBeforeTDF = findViewById(R.id.wage_number_of_days);
+        editTextIncomeAfterTDF = findViewById(R.id.wage_value_after);
+        editTextOccupationAfterTDF = findViewById(R.id.number_of_days_after);
         genderGroup = findViewById(R.id.gender);
         radioButton = findViewById(R.id.gender_male);
-        button = findViewById(R.id.family_info_submit);
+        button = findViewById(R.id.wage_info_submit);
     }
 }
