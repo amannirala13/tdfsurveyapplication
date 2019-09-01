@@ -11,6 +11,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 
+import com.tdf.tdfapplication.Data.DBManager;
+
 public class MainActivity extends AppCompatActivity {
 
     private Button button;
@@ -21,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText editTextCode;
     private EditText editTextName;
     private String[] villageList;
-
+    private DBManager dbManager;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,8 +46,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 code = editTextCode.getText().toString();
                 name = editTextName.getText().toString();
-
                 Log.i("INFO",code + " " + name+ " " + villageCode + villageList[Integer.parseInt(villageCode)-1].toUpperCase().substring(0,2) + name.toUpperCase().substring(0,2));
+
+                //Database code
+                dbManager.setCREATE_TABLE("person_id","name","village");
+                dbManager.open();
+                dbManager.insert(code,name,villageCode);
+
+
+                //Intent
                 Intent intent = new Intent(MainActivity.this, SectionActivity.class);
 
                 intent.putExtra("PERSON_KEY",villageList[Integer.parseInt(villageCode)-1].toUpperCase().substring(0,2) + name.toUpperCase().substring(0,2));
@@ -59,6 +68,7 @@ public class MainActivity extends AppCompatActivity {
         editTextCode = findViewById(R.id.investigator_code);
         editTextName = findViewById(R.id.investigator_name);
         button = findViewById(R.id.surveyor_submit);
+        dbManager = new DBManager(this,"surveyer_details");
 
         villageList = getResources().getStringArray(R.array.village_list);
 
