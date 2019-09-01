@@ -20,6 +20,7 @@ public class AnimalHusbandryComponentsActivity extends AppCompatActivity {
     private EditText editTextSellBeforeTDF, editTextSellAfterTDF;
     private Button button;
     private TextView textViewAnimalHusbandryLabel;
+    private float totalConsumptionBeforeTDF,totalConsumptionAfterTDF,totalSellBeforeTDF,totalSellAfterTDF;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

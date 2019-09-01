@@ -96,41 +96,6 @@
     <string name="before">Before getting TDF</string>
     <string name="after">After getting TDF</string>
 
-    <!--Asset ownership-->
-    <string-array name="farm_assets">
-        <item>Tractor without Ploughers</item>
-        <item>Tractor with Plougher</item>
-        <item>Manual Sprayer</item>
-        <item>Open Well</item>
-        <item>Tube Well</item>
-        <item>Cattle shed</item>
-        <item>Farm Building</item>
-        <item>Bullock Cart</item>
-        <item>Fodder Chopper</item>
-        <item>Electric Pump</item>
-        <item>Diesel Pump</item>
-        <item>Plougher equipments wooden</item>
-        <item>Plougher iron equipments</item>
-    </string-array>
-    <string-array name="livestock">
-        <item>Cow/Calf</item> <!--need to cross check-->
-        <item>Cow (Cross-bred)</item>
-        <item>Buffalo</item>
-        <item>Sheep</item>
-        <item>Goat</item>
-        <item>Poultry</item>
-        <item>Bullock</item>
-        <item>others</item>
-        <item>Farm</item>
-        <item>Pond</item>
-        <item>Type of house(Codes)</item>
-        <item>No. of rooms</item>
-        <item>No. of Mobile Phones</item>
-        <item>Cycle/Motor Cycle</item> <!--need to cross check-->
-        <item>Car</item>
-        <item>Refrigerator</item>
-    </string-array>
-
     <!--Family Details-->
     <string name="question_three_1">Name</string>
     <string name="question_three_2">Age</string>
@@ -168,6 +133,7 @@
     <string name="question_four_sub_one_2">No.</string>
     <string name="question_four_sub_one_3">Current Value in Rs</string>
 
+    <!--Other Asset-->
     <string name="question_four_sub_21">Cow</string>
     <string name="question_four_sub_22">Calf</string>
     <string name="question_four_sub_23">Cow(Cross Breed)</string>
@@ -194,17 +160,21 @@
     <string name="question_five_2">Toilet Facility in the house</string>
     <string name="question_five_two_1">Duration of use in months</string>
 
-    <string name="question_five_1_one">Tap Water</string>
-    <string name="question_five_1_two">Hand-pump</string>
-    <string name="question_five_1_three">Own Well</string>
-    <string name="question_five_1_four">Bore Well</string>
-    <string name="question_five_1_five">Others(please specify)</string>
-    <string name="question_five_1_six">None</string>
+    <string-array name="water_resource">
+        <item>None</item>
+        <item>Tap Water</item>
+        <item>Hand-pump</item>
+        <item>Own Well</item>
+        <item>Bore Well</item>
+        <item>Others(please specify)</item>
+    </string-array>
 
-    <string name="question_five_1_one_1_one">0-1Km</string>
-    <string name="question_five_1_one_1_two">2Km</string>
-    <string name="question_five_1_one_1_three">3Km</string>
-    <string name="question_five_1_one_1_four">Others(please specify)</string>
+    <string-array name="water_resource_distance">
+        <item>0-1Km</item>
+        <item>2Km</item>
+        <item>3Km</item>
+        <item>Others(please specify)</item>
+    </string-array>
 
     <!--Animal Husbandry Components-->
     <string name="question_seven">Choose owned Animal Husbandry Components</string>
