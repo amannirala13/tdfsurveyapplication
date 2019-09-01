@@ -22,7 +22,7 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-import com.google.android.gms.common.ConnectionResult;
+/*import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GoogleApiAvailability;
 import com.google.api.client.extensions.android.http.AndroidHttp;
 import com.google.api.client.googleapis.extensions.android.gms.auth.GoogleAccountCredential;
@@ -35,6 +35,7 @@ import com.google.api.client.util.ExponentialBackOff;
 import com.google.api.services.sheets.v4.SheetsScopes;
 import com.google.api.services.sheets.v4.model.AppendValuesResponse;
 import com.google.api.services.sheets.v4.model.ValueRange;
+*/
 import com.tdf.tdfapplication.Data.DBManager;
 
 import java.io.IOException;
@@ -46,11 +47,11 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
-
+/*
 import pub.devrel.easypermissions.AfterPermissionGranted;
 import pub.devrel.easypermissions.EasyPermissions;
 import pub.devrel.easypermissions.EasyPermissions;
-
+*/
 public class MainActivity extends AppCompatActivity{
 
 //    private GoogleAccountCredential mCredential;
@@ -101,9 +102,7 @@ public class MainActivity extends AppCompatActivity{
             public void onClick(View v) {
                 code = editTextCode.getText().toString();
                 name = editTextName.getText().toString();
-                dbManager.open();
-                dbManager.setCREATE_TABLE("person_id","name","village");
-                dbManager.insert(code,name,villageCode);
+                loadToSQLiteDatabase();
                 Log.i("INFO", code + " " + name + " " + villageCode + villageList[Integer.parseInt(villageCode) - 1].toUpperCase().substring(0, 2) + name.toUpperCase().substring(0, 2));
 
                 Intent intent = new Intent(MainActivity.this, SectionActivity.class);
@@ -136,6 +135,13 @@ public class MainActivity extends AppCompatActivity{
         ArrayAdapter<?> arrayAdapter = ArrayAdapter.createFromResource(this,
                 R.array.village_list, android.R.layout.simple_spinner_item);
         spinner.setAdapter(arrayAdapter);
+
+    }
+
+    public void loadToSQLiteDatabase(){
+        dbManager.setCREATE_TABLE("person_id","name","village");
+        dbManager.open();
+        dbManager.insert(code,name,villageCode);
 
     }
 }
