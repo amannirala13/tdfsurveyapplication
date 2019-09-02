@@ -1,0 +1,107 @@
+Index: app/src/main/java/com/tdf/tdfapplication/PersonalDetailsActivity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/tdf/tdfapplication/PersonalDetailsActivity.java	(date 1566799010000)
++++ app/src/main/java/com/tdf/tdfapplication/PersonalDetailsActivity.java	(revision 5b6eab6c60b74b77c030a8b71e8d5353c621a745)
+@@ -28,7 +28,6 @@
+     private String name, contact, year, gender, isBeneficiary;
+     private Button button;
+     public static String PERSON_KEY = "ABCD";
+-    String village_code;
+     private ArrayList<String> yearsOfJoiningList;
+ 
+     @Override
+@@ -45,7 +44,6 @@
+         } else {
+             PERSON_KEY = intent.getStringExtra("PERSON_KEY") + "1";
+         }
+-        village_code = intent.getStringExtra("Village_code");
+ 
+         spinnerYear.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+             @Override
+@@ -74,10 +72,8 @@
+                 } else {
+                     gender = "2";
+                 }
+-                //person_id  primary key,  name , gender , village , year date, contact_no )
+-                String values = " '" + PERSON_KEY + "','" + name + "','" + isBeneficiary +"','"+ gender+"','"+village_code+"','" +year+"','" + contact + "'" ;
++
+                 Log.i("INFO", year + " " + PERSON_KEY + " " + name + " " + isBeneficiary + " " + contact + " " + gender);
+-
+                 Intent intent = new Intent(PersonalDetailsActivity.this, SectionActivity.class);
+                 finish();
+             }
+Index: app/src/main/java/com/tdf/tdfapplication/MainActivity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/tdf/tdfapplication/MainActivity.java	(date 1566799934000)
++++ app/src/main/java/com/tdf/tdfapplication/MainActivity.java	(revision 5b6eab6c60b74b77c030a8b71e8d5353c621a745)
+@@ -44,16 +44,11 @@
+             public void onClick(View v) {
+                 code = editTextCode.getText().toString();
+                 name = editTextName.getText().toString();
+-                DBUtils dbUtils = new DBUtils();
+-                dbUtils.createTables();
+-                dbUtils.closeConn();
+-
+ 
+                 Log.i("INFO",code + " " + name+ " " + villageCode + villageList[Integer.parseInt(villageCode)-1].toUpperCase().substring(0,2) + name.toUpperCase().substring(0,2));
+                 Intent intent = new Intent(MainActivity.this, SectionActivity.class);
+ 
+                 intent.putExtra("PERSON_KEY",villageList[Integer.parseInt(villageCode)-1].toUpperCase().substring(0,2) + name.toUpperCase().substring(0,2));
+-                intent.putExtra("Village_code",villageCode);
+                 startActivity(intent);
+             }
+         });
+Index: app/src/main/java/com/tdf/tdfapplication/DBUtils.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/tdf/tdfapplication/DBUtils.java	(date 1566800084000)
++++ app/src/main/java/com/tdf/tdfapplication/adapter/DBUtils.java	(revision 5b6eab6c60b74b77c030a8b71e8d5353c621a745)
+@@ -1,8 +1,7 @@
+-package com.tdf.tdfapplication;
++package com.tdf.tdfapplication.adapter;
+ 
+ import android.database.Cursor;
+ import android.database.sqlite.SQLiteDatabase;
+-import android.util.Log;
+ 
+ 
+ import static android.database.sqlite.SQLiteDatabase.openOrCreateDatabase;
+@@ -12,12 +11,12 @@
+     SQLiteDatabase db=null;
+     Cursor cr;
+     DBUtils(){
+-        db=openOrCreateDatabase(R.string.app_name+"/databases/TDFdta.db", null,null);
++        db=openOrCreateDatabase("Mydata", null,null);
+ 
+     }
+     void createTables(){
+-        db.execSQL("create table if not exists person_details(person_id varchar(10) primary key,  name varchar(30),isBeneficiary varchar(5), gender varchar(10), village varchar(20), year date, contact_no varchar(15))");
+-        db.execSQL("create table if not exists household_info(person_id varchar(10),religion varchar(10), caste varchar(20), tribe varchar(20), income decimal, no_of_members int, MANREGA_card int, ration_car int, adhaar_card int, FOREIGN KEY(person_id) REFERENCES person_details(person_id) )");
++        db.execSQL("create table if not exists person_details(person_id varchar(10) primary key,  name varchar(30), gender varchar(10), village varchar(20), year date, contact_no varchar(15))");
++        db.execSQL("create table if not exists household_info(person_id int(20),religion varchar(10), caste varchar(20), tribe varchar(20), income decimal, no_of_members int, MANREGA_card int, ration_car int, adhaar_card int, FOREIGN KEY(person_id) REFERENCES person_details(person_id) )");
+         db.execSQL("create table if not exists farm_assets(personid varchar(10),\n" +
+                 "    asset_name varchar(30),\n" +
+                 "    before_ij varchar(10),\n" +
+@@ -36,14 +35,6 @@
+     void closeConn(){
+         db.close();
+     }
+-    void displayData(String tablename){
+-        cr = db.rawQuery("Select * from "+tablename,null);
+-        while (cr.moveToNext()){
+-            Log.i("person id:",cr.getString(1));
+-
+-        }
+-
+-    }
+ 
+ 
+ }

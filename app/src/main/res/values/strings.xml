@@ -447,4 +447,51 @@ activities for the works undertaken through the TDF?</string>
     <string name="question_twentysix_20">Apart from the TDF project what other developmental activities are taken up by the PIA in this area?</string>
     <string name="question_twentysix_21">Do you participate in some of them?</string>
 
+    <!--Interventions made for other infrastructure-->
+    <string-array name="question_seventeen_infrastructure">
+        <item>Field Nursery</item>
+        <item>Poly House</item>
+        <item>Shade Net</item>
+        <item>Green House</item>
+        <item>Plastic crates</item>
+        <item>Processing Equipment</item>
+        <item>Kitchen Garden</item>
+        <item>Other</item>
+    </string-array>
+    <string name="question_seventeen_1">Own Contribution (Rs)</string>
+    <string name="question_seventeen_2">Amount financed by loan (Rs.)?</string>
+    <string name="question_seventeen_3">Source of Credit Bank -1 MFI -2 Money lender -3 4. Friend/Relatives 5.Other – 888</string>
+    <string name="question_seventeen_4">Subsidy amount (Rs.) </string>
+    <string name="question_seventeen_5">Nature of Subsidy: Price Subsidy -1, DBT -2, Bank loan at lower rate of interest-3, Bank loan at longer repayment period-4, Simplification of procedures- 5, Any other-6</string>
+    <string name="question_seventeen_6">If DBT, Number of days taken to receive subsidy?</string>
+    <string name="question_seventeen_7">Area covered (acres per implement)</string>
+    <string name="question_seventeen_8">Benefits derived (Codes Below)</string>
+    <string name="question_seventeen_9">If subsidy not received, would you have made this expense? (yes/no)</string>
+
+    <!--Interventions made in animal husbandary and dairy-->
+    <string-array name="question_eighteen_assets">
+        <item>Cows</item>
+        <item>Buffaloes</item>
+        <item>Sheep / Goat and other animals</item>
+        <item>Poultry</item>
+        <item>Others</item>
+    </string-array>
+    <string name="question_eighteen_1_sub_1">Have you bought this animal?</string>
+    <string name="question_eighteen_1_sub_2">Actual cost (Rs.)</string>
+    <string name="question_eighteen_1_sub_3">Own Contribution</string>
+    <string name="question_eighteen_1_sub_4">Amount financed by loan (Rs.)?</string>
+    <string name="question_eighteen_1_sub_5">Source of Credit: Purchased by own source-1, Bank -2 MFI -3 Money lender - 4, Other – 888</string>
+    <string name="question_eighteen_1_sub_6">If subsidy not received, would you have bought this? (yes---1/no---0)</string>
+
+    <string-array name="question_eighteen_2_list">
+        <item>Calcium</item>
+        <item>Protein</item>
+        <item>Jaggery</item>
+        <item>Azolla</item>
+        <item>Fodder seed</item>
+        <item>Fodder root cuttings</item>
+        <item>Vaccine</item>
+        <item>De-worming tablets</item>
+        <item>Others</item>
+    </string-array>
 </resources>

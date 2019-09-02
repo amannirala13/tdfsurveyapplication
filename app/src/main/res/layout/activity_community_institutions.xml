@@ -27,7 +27,7 @@
 
     <TextView
         android:id="@+id/textView1"
-        android:layout_width="396dp"
+        android:layout_width="wrap_content"
         android:layout_height="68dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
@@ -39,7 +39,7 @@
 
     <LinearLayout
         android:id="@+id/linearLayout_1"
-        android:layout_width="383dp"
+        android:layout_width="wrap_content"
         android:layout_height="63dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
@@ -72,7 +72,7 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="396dp"
+        android:layout_width="wrap_content"
         android:layout_height="68dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
@@ -84,7 +84,7 @@
 
     <LinearLayout
         android:id="@+id/linearLayout_2"
-        android:layout_width="383dp"
+        android:layout_width="wrap_content"
         android:layout_height="63dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
@@ -117,7 +117,7 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="396dp"
+        android:layout_width="wrap_content"
         android:layout_height="68dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
@@ -129,7 +129,7 @@
 
     <LinearLayout
         android:id="@+id/linearLayout_3"
-        android:layout_width="383dp"
+        android:layout_width="wrap_content"
         android:layout_height="63dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
@@ -162,7 +162,7 @@
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="396dp"
+        android:layout_width="wrap_content"
         android:layout_height="68dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
@@ -174,7 +174,7 @@
 
     <LinearLayout
         android:id="@+id/linearLayout_4"
-        android:layout_width="383dp"
+        android:layout_width="wrap_content"
         android:layout_height="63dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
@@ -207,7 +207,7 @@
 
     <TextView
         android:id="@+id/textView5"
-        android:layout_width="396dp"
+        android:layout_width="wrap_content"
         android:layout_height="68dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
@@ -219,7 +219,7 @@
 
     <LinearLayout
         android:id="@+id/linearLayout_5"
-        android:layout_width="383dp"
+        android:layout_width="wrap_content"
         android:layout_height="63dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
@@ -252,7 +252,7 @@
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="396dp"
+        android:layout_width="wrap_content"
         android:layout_height="68dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
@@ -264,7 +264,7 @@
 
     <LinearLayout
         android:id="@+id/linearLayout_6"
-        android:layout_width="383dp"
+        android:layout_width="wrap_content"
         android:layout_height="63dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
@@ -296,7 +296,7 @@
 
         <TextView
             android:id="@+id/textView6_1"
-            android:layout_width="396dp"
+            android:layout_width="wrap_content"
             android:layout_height="68dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
@@ -320,7 +320,7 @@
 
         <TextView
             android:id="@+id/textView6_2"
-            android:layout_width="396dp"
+            android:layout_width="wrap_content"
             android:layout_height="68dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
@@ -343,7 +343,7 @@
             android:layout_marginLeft="16dp" />
         <TextView
             android:id="@+id/textView6_3"
-            android:layout_width="396dp"
+            android:layout_width="wrap_content"
             android:layout_height="68dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
@@ -367,7 +367,7 @@
 
         <TextView
             android:id="@+id/textView7"
-            android:layout_width="396dp"
+            android:layout_width="wrap_content"
             android:layout_height="68dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
@@ -391,7 +391,7 @@
 
         <TextView
             android:id="@+id/textView8"
-            android:layout_width="396dp"
+            android:layout_width="wrap_content"
             android:layout_height="68dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
@@ -415,7 +415,7 @@
 
         <TextView
             android:id="@+id/textView9"
-            android:layout_width="396dp"
+            android:layout_width="wrap_content"
             android:layout_height="68dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
@@ -439,7 +439,7 @@
 
         <TextView
             android:id="@+id/textView10"
-            android:layout_width="396dp"
+            android:layout_width="wrap_content"
             android:layout_height="68dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
@@ -463,7 +463,7 @@
 
         <TextView
             android:id="@+id/textView11"
-            android:layout_width="396dp"
+            android:layout_width="wrap_content"
             android:layout_height="68dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
@@ -487,7 +487,7 @@
 
         <TextView
             android:id="@+id/textView12"
-            android:layout_width="396dp"
+            android:layout_width="wrap_content"
             android:layout_height="68dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
@@ -512,7 +512,7 @@
 
         <TextView
             android:id="@+id/textView13"
-            android:layout_width="396dp"
+            android:layout_width="wrap_content"
             android:layout_height="68dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
@@ -524,7 +524,7 @@
 
         <LinearLayout
             android:id="@+id/linearLayout_7"
-            android:layout_width="383dp"
+            android:layout_width="wrap_content"
             android:layout_height="63dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
@@ -557,7 +557,7 @@
 
         <TextView
             android:id="@+id/textView14"
-            android:layout_width="396dp"
+            android:layout_width="wrap_content"
             android:layout_height="68dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
@@ -569,7 +569,7 @@
 
         <LinearLayout
             android:id="@+id/linearLayout_14"
-            android:layout_width="383dp"
+            android:layout_width="wrap_content"
             android:layout_height="63dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
@@ -602,7 +602,7 @@
 
         <TextView
             android:id="@+id/textView15"
-            android:layout_width="396dp"
+            android:layout_width="wrap_content"
             android:layout_height="68dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
@@ -614,7 +614,7 @@
 
         <LinearLayout
             android:id="@+id/linearLayout_15"
-            android:layout_width="383dp"
+            android:layout_width="wrap_content"
             android:layout_height="63dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
@@ -647,7 +647,7 @@
 
         <TextView
             android:id="@+id/textView16"
-            android:layout_width="396dp"
+            android:layout_width="wrap_content"
             android:layout_height="68dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
@@ -659,7 +659,7 @@
 
         <LinearLayout
             android:id="@+id/linearLayout_16"
-            android:layout_width="383dp"
+            android:layout_width="wrap_content"
             android:layout_height="63dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
@@ -692,7 +692,7 @@
 
         <TextView
             android:id="@+id/textView17"
-            android:layout_width="396dp"
+            android:layout_width="wrap_content"
             android:layout_height="68dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
@@ -704,7 +704,7 @@
 
         <LinearLayout
             android:id="@+id/linearLayout_17"
-            android:layout_width="383dp"
+            android:layout_width="wrap_content"
             android:layout_height="63dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
