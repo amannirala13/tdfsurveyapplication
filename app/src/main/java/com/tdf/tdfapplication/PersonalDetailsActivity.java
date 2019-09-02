@@ -14,8 +14,15 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
 
+import com.tdf.tdfapplication.utils.DatabaseManager;
+
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Date;
 
 public class PersonalDetailsActivity extends AppCompatActivity {
 
@@ -73,12 +80,26 @@ public class PersonalDetailsActivity extends AppCompatActivity {
                     gender = "2";
                 }
 
+//                loadIntoSQLiteDatabase();
+
                 Log.i("INFO", year + " " + PERSON_KEY + " " + name + " " + isBeneficiary + " " + contact + " " + gender);
                 Intent intent = new Intent(PersonalDetailsActivity.this, SectionActivity.class);
                 finish();
             }
         });
     }
+
+//    private void loadIntoSQLiteDatabase(){
+//
+//        DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd");
+//        Date date = new Date();
+//        System.out.println(dateFormat.format(date));
+//
+//        DatabaseManager databaseManager = new DatabaseManager(this,"respondent_personal_details");
+//        databaseManager.setCreateTable("respondent_id","respondent_name","respondent_contact","respondent_gender","respondent_year_of_joining","respondent_date_of_visit");
+//        databaseManager.open();
+//        databaseManager.insert(PERSON_KEY,name,contact,gender,year,dateFormat.format(date));
+//    }
 
     private void initialize() {
         editTextName = findViewById(R.id.respondent_name_edit_text);
