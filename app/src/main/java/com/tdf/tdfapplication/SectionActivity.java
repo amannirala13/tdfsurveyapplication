@@ -61,8 +61,8 @@ public class SectionActivity extends AppCompatActivity {
             MainActivity.class,//"Migration",
             WageEmployementActivity.class,
             MainActivity.class,//"TDF Programme Awareness",
-            MainActivity.class,//"Intervention -Horticulture",
-            MainActivity.class,//"Intervention -Water Resource Development",
+            InterventionsRegardingHorticultureActivity.class,//"Intervention -Horticulture",
+            InterventionsRegardingWaterResources.class,//"Intervention -Water Resource Development",
             MainActivity.class,//"Intervention - Other Infrastructure",
             DirectInterventionActivity.class,
             SoilConservationIntervention.class,
@@ -72,9 +72,9 @@ public class SectionActivity extends AppCompatActivity {
             MainActivity.class,//"Community Institutions",
             MainActivity.class,//"Credit Penetration & it's impact",
             MainActivity.class,//"Role of Programme Implementing Agency (PIA)",
-            MainActivity.class,//"Other Information",
-            MainActivity.class,//"Constraints while availing TDF benefit",
+            OtherTDFInfoActivity.class,
             TDFConstraintsActivity.class,
+            MainActivity.class,
             MainActivity.class
     };
 
