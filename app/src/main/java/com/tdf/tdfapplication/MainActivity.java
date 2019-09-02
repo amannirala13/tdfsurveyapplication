@@ -36,7 +36,7 @@ import com.google.api.services.sheets.v4.SheetsScopes;
 import com.google.api.services.sheets.v4.model.AppendValuesResponse;
 import com.google.api.services.sheets.v4.model.ValueRange;
 */
-import com.tdf.tdfapplication.Data.DBManager;
+import com.tdf.tdfapplication.utils.DatabaseManager;
 
 import java.io.IOException;
 import java.text.DateFormat;
@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity{
     private EditText editTextCode;
     private EditText editTextName;
     private String[] villageList;
-    private DBManager dbManager;
+    private DatabaseManager dbManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -129,7 +129,7 @@ public class MainActivity extends AppCompatActivity{
         editTextCode = findViewById(R.id.investigator_code);
         editTextName = findViewById(R.id.investigator_name);
         button = findViewById(R.id.surveyor_submit);
-        dbManager = new DBManager(this,"surveyer_details");
+        dbManager = new DatabaseManager(this,"surveyer_details");
         villageList = getResources().getStringArray(R.array.village_list);
 
         ArrayAdapter<?> arrayAdapter = ArrayAdapter.createFromResource(this,
@@ -139,7 +139,7 @@ public class MainActivity extends AppCompatActivity{
     }
 
     public void loadToSQLiteDatabase(){
-        dbManager.setCREATE_TABLE("person_id","name","village");
+        dbManager.setCreateTable("person_id","name","village");
         dbManager.open();
         dbManager.insert(code,name,villageCode);
 

@@ -347,4 +347,63 @@ you have bought this? (yes---
     <string name="question_fourteen_5">In how may years have you receive any benefits from any other Government Scheme in the last five years excluding this year?</string>
     <string name="question_fourteen_6">In how may years have you receive any benefits from Small Farmers’ Agri-Business Consortium (SFAC)?</string>
 
+    <!--Community Institutions_-->
+    <string name="question_twentyfour_1">Do the village planning committee/Panchayat get actively monitor the execution of the works undertaken through the TDF?</string>
+    <string name="question_twentyfour_2">Does the village planning committee/ Panchayat get actively involved in planning for improving the outcome of the works
+undertaken through the TDF?</string>
+    <string name="question_twentyfour_3">Does the village planning committee/Panchayat get actively involved in disseminating technical knowhow of the works
+undertaken through the TDF?</string>
+    <string name="question_twentyfour_4">Does the village planning committee/Panchayat get actively involved in book keeping the works undertaken through the TDF?</string>
+    <string name="question_twentyfour_5">Does the village planning committee/Panchayat get actively involved in planning and training for better fund management
+activities for the works undertaken through the TDF?</string>
+    <string name="question_twentyfour_6">Apart from the village planning committee/Pnachayat, any other institution involved in the works
+Undertaken through the TDF?</string>
+    <string name="question_twentyfour_6_sub1">Self Help Groups (SHGs) Name:</string>
+    <string name="question_twentyfour_6_sub2">Joint Liability Groups (JLG) Name</string>
+    <string name="question_twentyfour_6_sub3">Farmer Producer\'s Organizations (FPO) Name</string>
+    <string name="question_twentyfour_7">What was the role of the organizations mentioned in 13, if any?</string>
+    <string name="question_twentyfour_8">How many people are involved in the said organization?</string>
+    <string name="question_twentyfour_9">What do this organization do? </string>
+    <string name="question_twentyfour_10">What is the yearly income(in Rs, if any) do this organization generate?</string>
+    <string name="question_twentyfour_11">How many employees are working with this organization?</string>
+    <string name="question_twentyfour_12">What kind of benefits do you receive from the said organization?</string>
+    <string name="question_twentyfour_13">Do the village planning committee/Panchayat get actively monitor the execution of the works undertaken through the TDF?</string>
+    <string name="question_twentyfour_14">Does the village planning committee/Panchayat get actively involved in planning for improving the outcome of the works
+undertaken through the TDF?</string>
+    <string name="question_twentyfour_15">Does the village planning committee/Panchayat get actively involved in disseminating technical knowhow of the works
+undertaken through the TDF?</string>
+    <string name="question_twentyfour_16">Does the village planning committee/Panchayat get actively involved in book keeping the works undertaken through the TDF?</string>
+    <string name="question_twentyfour_17">Does the village planning committee/Panchayat get actively involved in planning and training for better fund management
+activities for the works undertaken through the TDF?</string>
+
+
+    <!--Role of programme Implementing Agency-->
+
+    <string name="question_twentysix_1">Name of the PIA</string>
+    <string name="question_twentysix_2">Do they have an office in your area?</string>
+    <string name="question_twentysix_3">Activities taken up by the PIA for implementing the programs under TDF</string>
+    <string name="question_twentysix_4">How often the PIA personnel did meet the beneficiaries?</string>
+    <string name="question_twentysix_5">I feel welcome at PIA local office</string>
+    <string name="question_twentysix_6">I feel comfortable asking questions about PIA services</string>
+    <string name="question_twentysix_7">I feel included at PIA events</string>
+    <string name="question_twentysix_8">I feel my feedback about services is valued by the PIA</string>
+    <string name="question_twentysix_9">I feel the required capacity building is done by PIA</string>
+    <string name="question_twentysix_10">The hours that PIA offers services (when the office is open) work for me</string>
+    <string name="question_twentysix_11">The mix of services that PIA offers meet my needs</string>
+    <string name="question_twentysix_11_sub_1">Wadi interventions</string>
+    <string name="question_twentysix_11_sub_2">WRD activities</string>
+    <string name="question_twentysix_11_sub_3">Livelihood activities</string>
+    <string name="question_twentysix_12">Scheduling of works by PIA was satisfactory</string>
+    <string name="question_twentysix_13">Adequate staffs were provided by the PIA</string>
+    <string name="question_twentysix_14">The staffs of the PIA was well trained and knowledgeable</string>
+    <string name="question_twentysix_15">The staffs of the PIA provided technical inputs</string>
+    <string name="question_twentysix_16">Adequate handholding to execute the technical inputs was provided by the
+PIA</string>
+    <string name="question_twentysix_17">Records of the TDF project are taken</string>
+    <string name="question_twentysix_18">What other programs of the Government are you aware of?</string>
+    <string name="question_twentysix_19">Did the PIA facilitated with some of them?</string>
+    <string name="question_twentysix_20">Apart from the TDF project what other developmental activities are taken up
+by the PIA in this area?</string>
+    <string name="question_twentysix_21">Do you participate in some of them?</string>
+
 </resources>
