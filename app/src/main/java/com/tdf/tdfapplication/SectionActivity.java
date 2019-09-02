@@ -53,7 +53,7 @@ public class SectionActivity extends AppCompatActivity {
             IrrigationListActivity.class,
             MainActivity.class,//            "Cost Benefit Analysis from Crop Cultivation",
             AnimalHusbandryList.class,
-            MainActivity.class,//           "Other Income-Generating Activities",
+            OtherIncomeGeneratingList.class,//           "Other Income-Generating Activities",
             HouseholdConsumptionList.class,
             FuelLightExpenditureActivity.class,
             MainActivity.class,//"Agriculture Fuel and Light Expenditure",

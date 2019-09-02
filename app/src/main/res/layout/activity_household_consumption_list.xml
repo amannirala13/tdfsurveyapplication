@@ -203,14 +203,6 @@
             android:textSize="20sp"
             android:layout_marginLeft="8dp" />
 
-
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:minEms="10"
-            android:visibility="gone"
-            android:layout_marginLeft="10dp"
-            android:id="@+id/animal_husbandry_other_list" />
         <Button
             android:id="@+id/household_consumption_info_submit"
             android:layout_width="wrap_content"

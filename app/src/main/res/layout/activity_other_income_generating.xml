@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.tdf.tdfapplication.OtherIncomeGeneratingActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/household_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="8dp"
+            android:text="Other Income Generating Activities Details"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/item_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="76dp"
+            android:text="@string/question_nine_item_1"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/household_label" />
+
+        <TextView
+            android:id="@+id/before_tdf_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/before_tdf_label"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/item_label"
+            app:layout_constraintTop_toBottomOf="@+id/item_label" />
+
+        <TextView
+            android:id="@+id/earning_from_activities_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/question_1"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/before_tdf_label"
+            app:layout_constraintTop_toBottomOf="@+id/before_tdf_label" />
+
+        <EditText
+            android:id="@+id/earning_from_activities"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:ems="10"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/earning_from_activities_label"
+            app:layout_constraintStart_toEndOf="@+id/earning_from_activities_label"
+            app:layout_constraintTop_toTopOf="@+id/earning_from_activities_label" />
+
+        <TextView
+            android:id="@+id/paid_out_costs_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/question_2"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/earning_from_activities_label"
+            app:layout_constraintTop_toBottomOf="@+id/earning_from_activities_label" />
+
+        <EditText
+            android:id="@+id/paid_out_costs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:ems="10"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/paid_out_costs_label"
+            app:layout_constraintStart_toEndOf="@+id/paid_out_costs_label"
+            app:layout_constraintTop_toTopOf="@+id/paid_out_costs_label" />
+
+        <TextView
+            android:id="@+id/after_tdf_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/after_tdf_label"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/paid_out_costs_label"
+            app:layout_constraintTop_toBottomOf="@+id/paid_out_costs_label" />
+
+        <TextView
+            android:id="@+id/earning_from_activities_label_after"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/question_1"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/after_tdf_label"
+            app:layout_constraintTop_toBottomOf="@+id/after_tdf_label" />
+
+        <EditText
+            android:id="@+id/earning_from_activities_after"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:ems="10"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/earning_from_activities_label_after"
+            app:layout_constraintStart_toEndOf="@+id/earning_from_activities_label_after"
+            app:layout_constraintTop_toTopOf="@+id/earning_from_activities_label_after" />
+
+        <TextView
+            android:id="@+id/paid_out_costs_label_after"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/question_2"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/earning_from_activities_label_after"
+            app:layout_constraintTop_toBottomOf="@+id/earning_from_activities_label_after" />
+
+        <EditText
+            android:id="@+id/paid_out_costs_after"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:ems="10"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/paid_out_costs_label_after"
+            app:layout_constraintStart_toEndOf="@+id/paid_out_costs_label_after"
+            app:layout_constraintTop_toTopOf="@+id/paid_out_costs_label_after" />
+        <Button
+            android:id="@+id/other_income_generating_activities_info_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="8dp"
+            android:background="#000000"
+            android:text="Submit"
+            android:textColor="#ffffff"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.466"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/paid_out_costs_label_after" />
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
