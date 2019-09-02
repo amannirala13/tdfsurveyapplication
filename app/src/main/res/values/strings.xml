@@ -189,6 +189,33 @@
     <string name="question_seven_own_consumption">Own Consumption</string>
     <string name="question_seven_for_sell">For sell</string>
 
+    <!--Household consumption information-->
+    <string name="question_eight_1">Frequency</string>
+    <string name="question_eight_2">Rs/month</string>
+    <string name="question_eight_3">Source</string>
+
+    <string name="question_eight_item_1">Rice</string>
+    <string name="question_eight_item_2">Wheat</string>
+    <string name="question_eight_item_3">Vegetable</string>
+    <string name="question_eight_item_4">Pulses</string>
+    <string name="question_eight_item_5">Fruits</string>
+    <string name="question_eight_item_6">Milk</string>
+    <string name="question_eight_item_7">Eggs</string>
+    <string name="question_eight_item_8">Fish</string>
+    <string name="question_eight_item_9">Meat</string>
+    <string name="question_eight_item_10">Pan,tobacco,intoxicant</string>
+    <string name="question_eight_item_11">Fuel and Light</string>
+    <string name="question_eight_item_12">Medical</string>
+    <string name="question_eight_item_13">Education</string>
+    <string name="question_eight_item_14">Minor duration type goods</string>
+    <string name="question_eight_item_15">Entertainment and conveyence</string>
+    <string name="question_eight_item_16">Rent</string>
+    <string name="question_eight_item_17">Clothing</string>
+    <string name="question_eight_item_18">Bedding</string>
+    <string name="question_eight_item_19">Footwear</string>
+    <string name="question_eight_item_20">Durable goods</string>
+
+
     <!--Horticulture interventions-->
     <string name="question_fifteen_1">Cashew Grafts</string>
     <string name="question_fifteen_2">Mango Grafts</string>

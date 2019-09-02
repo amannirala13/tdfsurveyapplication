@@ -1,174 +1,218 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.tdf.tdfapplication.HouseholdConsumptionActivity">
 
-    <TextView
-        android:id="@+id/item_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="76dp"
-        android:text="Tractor With Plougher"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/farm_asset_label" />
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/before_tdf_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="8dp"
-        android:text="@string/before_tdf_label"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-        android:textColor="#000000"
-        android:textSize="30sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/item_label"
-        app:layout_constraintTop_toBottomOf="@+id/item_label" />
+        <TextView
+            android:id="@+id/household_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="8dp"
+            android:text="Household Consumption Details"
+            android:textColor="#000000"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/wage_number_of_days_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="@string/question_four_sub_one_1"
-        android:textSize="20sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/before_tdf_label"
-        app:layout_constraintTop_toBottomOf="@+id/before_tdf_label" />
+        <TextView
+            android:id="@+id/item_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="76dp"
+            android:text="@string/question_eight_item_1"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/household_label" />
 
-    <EditText
-        android:id="@+id/wage_number_of_days"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:ems="10"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/wage_number_of_days_label"
-        app:layout_constraintStart_toEndOf="@+id/wage_number_of_days_label"
-        app:layout_constraintTop_toTopOf="@+id/wage_number_of_days_label" />
+        <TextView
+            android:id="@+id/before_tdf_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/before_tdf_label"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/item_label"
+            app:layout_constraintTop_toBottomOf="@+id/item_label" />
 
-    <TextView
-        android:id="@+id/wage_value_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="@string/question_four_sub_one_2"
-        android:textSize="20sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/wage_number_of_days_label"
-        app:layout_constraintTop_toBottomOf="@+id/wage_number_of_days_label" />
+        <TextView
+            android:id="@+id/household_frequency_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/question_eight_1"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/before_tdf_label"
+            app:layout_constraintTop_toBottomOf="@+id/before_tdf_label" />
 
-    <EditText
-        android:id="@+id/wage_value"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:ems="10"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/wage_value_label"
-        app:layout_constraintStart_toEndOf="@+id/wage_value_label"
-        app:layout_constraintTop_toTopOf="@+id/wage_value_label" />
+        <EditText
+            android:id="@+id/household_frequency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:ems="10"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/household_frequency_label"
+            app:layout_constraintStart_toEndOf="@+id/household_frequency_label"
+            app:layout_constraintTop_toTopOf="@+id/household_frequency_label" />
 
-    <TextView
-        android:id="@+id/after_tdf_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="8dp"
-        android:text="@string/after_tdf_label"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-        android:textColor="#000000"
-        android:textSize="30sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/wage_value_label"
-        app:layout_constraintTop_toBottomOf="@+id/wage_value_label" />
+        <TextView
+            android:id="@+id/household_price_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/question_eight_2"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/household_frequency_label"
+            app:layout_constraintTop_toBottomOf="@+id/household_frequency_label" />
 
-    <TextView
-        android:id="@+id/wage_number_of_days_label_after"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="@string/question_four_sub_one_1"
-        android:textSize="20sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/after_tdf_label"
-        app:layout_constraintTop_toBottomOf="@+id/after_tdf_label" />
+        <EditText
+            android:id="@+id/household_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:ems="10"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/household_price_label"
+            app:layout_constraintStart_toEndOf="@+id/household_price_label"
+            app:layout_constraintTop_toTopOf="@+id/household_price_label" />
 
-    <EditText
-        android:id="@+id/number_of_days_after"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:ems="10"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/wage_number_of_days_label_after"
-        app:layout_constraintStart_toEndOf="@+id/wage_number_of_days_label_after"
-        app:layout_constraintTop_toTopOf="@+id/wage_number_of_days_label_after" />
+        <TextView
+            android:id="@+id/household_source_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/question_eight_3"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/household_price_label"
+            app:layout_constraintTop_toBottomOf="@+id/household_price_label" />
 
-    <TextView
-        android:id="@+id/wage_value_label_after"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="@string/question_four_sub_one_2"
-        android:textSize="20sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/wage_number_of_days_label_after"
-        app:layout_constraintTop_toBottomOf="@+id/wage_number_of_days_label_after" />
-
-    <EditText
-        android:id="@+id/wage_value_after"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:ems="10"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/wage_value_label_after"
-        app:layout_constraintStart_toEndOf="@+id/wage_value_label_after"
-        app:layout_constraintTop_toTopOf="@+id/wage_value_label_after" />
-
-    <TextView
-        android:id="@+id/family_member_count_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="@string/question_four_sub_one_3"
-        android:textSize="20sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/wage_value_label_after"
-        app:layout_constraintTop_toBottomOf="@+id/wage_value_label_after" />
-
-    <EditText
-        android:id="@+id/family_member_count"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:ems="10"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/family_member_count_label"
-        app:layout_constraintStart_toEndOf="@+id/family_member_count_label"
-        app:layout_constraintTop_toTopOf="@+id/family_member_count_label" />
-
-    <Button
-        android:id="@+id/asset_info_submit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="44dp"
-        android:layout_marginEnd="8dp"
-        android:background="#000000"
-        android:text="Submit"
-        android:textColor="#ffffff"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.466"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/family_member_count" />
+        <Spinner
+            android:id="@+id/household_source"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:ems="10"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/household_source_label"
+            app:layout_constraintStart_toEndOf="@+id/household_source_label"
+            app:layout_constraintTop_toTopOf="@+id/household_source_label" />
 
 
-</android.support.constraint.ConstraintLayout>
+        <TextView
+            android:id="@+id/after_tdf_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/after_tdf_label"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/household_source_label"
+            app:layout_constraintTop_toBottomOf="@+id/household_source_label" />
+
+        <TextView
+            android:id="@+id/household_frequency_label_after"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/question_eight_1"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/after_tdf_label"
+            app:layout_constraintTop_toBottomOf="@+id/after_tdf_label" />
+
+        <EditText
+            android:id="@+id/household_frequency_after"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:ems="10"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/household_frequency_label_after"
+            app:layout_constraintStart_toEndOf="@+id/household_frequency_label_after"
+            app:layout_constraintTop_toTopOf="@+id/household_frequency_label_after" />
+
+        <TextView
+            android:id="@+id/household_price_label_after"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/question_eight_2"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/household_frequency_label_after"
+            app:layout_constraintTop_toBottomOf="@+id/household_frequency_label_after" />
+
+        <EditText
+            android:id="@+id/household_price_after"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:ems="10"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/household_price_label_after"
+            app:layout_constraintStart_toEndOf="@+id/household_price_label_after"
+            app:layout_constraintTop_toTopOf="@+id/household_price_label_after" />
+
+        <TextView
+            android:id="@+id/household_source_label_after"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/question_eight_3"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/household_price_label_after"
+            app:layout_constraintTop_toBottomOf="@+id/household_price_label_after" />
+
+        <Spinner
+            android:id="@+id/household_source_after"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:ems="10"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/household_source_label_after"
+            app:layout_constraintStart_toEndOf="@+id/household_source_label_after"
+            app:layout_constraintTop_toTopOf="@+id/household_source_label_after" />
+
+
+        <Button
+            android:id="@+id/household_consumption_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="8dp"
+            android:background="#000000"
+            android:text="Submit"
+            android:textColor="#ffffff"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.466"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/household_source_label_after" />
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>
