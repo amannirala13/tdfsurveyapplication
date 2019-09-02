@@ -38,6 +38,7 @@ public class AnimalHusbandryList extends AppCompatActivity {
                     editTextOtherAnimalHusbandry.setVisibility(View.VISIBLE);
                     flagForOther = true;
                 } else {
+                    flagForOther = false;
                     editTextOtherAnimalHusbandry.setVisibility(View.GONE);
                 }
             }
