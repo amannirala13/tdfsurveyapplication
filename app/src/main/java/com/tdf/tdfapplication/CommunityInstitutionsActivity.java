@@ -81,7 +81,6 @@ public class CommunityInstitutionsActivity extends AppCompatActivity {
 
     private void initialize() {
         radioGroupCommunityAnswers = new HashMap<RadioGroup, String>();
-
         linearLayout = findViewById(R.id.linearLayout);
         editTextCommunityAnswers = new EditText[9];
         answerForEditTexts = new String[editTextCommunityAnswers.length];
