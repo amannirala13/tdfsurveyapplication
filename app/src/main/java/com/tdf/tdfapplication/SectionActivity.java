@@ -69,7 +69,7 @@ public class SectionActivity extends AppCompatActivity {
             OtherTDFInfoActivity.class,
             EnvironmentalBenefitsActivity.class,
             MainActivity.class,//"Applied Compost Details",
-            MainActivity.class,//"Community Institutions",
+            CommunityInstitutionsActivity.class,//"Community Institutions",
             MainActivity.class,//"Credit Penetration & it's impact",
             MainActivity.class,//"Role of Programme Implementing Agency (PIA)",
             OtherTDFInfoActivity.class,

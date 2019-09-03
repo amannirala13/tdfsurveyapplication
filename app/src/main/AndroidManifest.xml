@@ -19,7 +19,6 @@
         <activity android:name=".HouseholdConsumptionActivity" />
         <activity android:name=".IrrigationListActivity" />
         <activity android:name=".AnimalHusbandryList" />
-        <activity android:name="com.tdf.application.AnimalHusbandryList" />
         <activity android:name=".InterventionsRegardingWaterResources" />
         <activity android:name=".HorticultureInterventionSub" />
         <activity android:name=".BasicHouseholdInfoActivity" />
@@ -45,6 +44,7 @@
         <activity android:name=".FamilyDetailsFirstScreen" />
         <activity android:name=".FamilyDetailsActivity" />
         <activity android:name=".BasicHouseholdInformationActivity" />
+        <activity android:name=".CommunityInstitutionsActivity"/>
         <activity android:name=".PersonalDetailsActivity" />
         <activity android:name=".SectionActivity" />
         <activity android:name=".MainActivity">
