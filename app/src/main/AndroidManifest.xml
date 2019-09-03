@@ -13,7 +13,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".OtherIncomeGeneratingList"></activity>
+        <activity android:name=".InterventionAnimalHusbandryActivity"></activity>
+        <activity android:name=".InterventionInfrastructureActivity" />
+        <activity android:name=".OtherIncomeGeneratingList" />
         <activity android:name=".OtherIncomeGeneratingActivity" />
         <activity android:name=".HouseholdConsumptionList" />
         <activity android:name=".HouseholdConsumptionActivity" />

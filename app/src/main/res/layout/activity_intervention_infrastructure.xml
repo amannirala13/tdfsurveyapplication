@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".InterventionInfrastructureActivity">
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/intervention_infrastructure_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="8dp"
+            android:text="Interventions made for other infrastructure"
+            android:textColor="#000000"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/intervention_asset_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="76dp"
+            android:text="Field Nursery"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/intervention_infrastructure_label" />
+
+        <TextView
+            android:id="@+id/section_seventeen_row_1_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/question_seventeen_1"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/intervention_asset_label"
+            app:layout_constraintTop_toBottomOf="@+id/intervention_asset_label" />
+
+        <EditText
+            android:id="@+id/section_seventeen_row_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:ems="10"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/section_seventeen_row_1_label"
+            app:layout_constraintStart_toEndOf="@+id/section_seventeen_row_1_label"
+            app:layout_constraintTop_toTopOf="@+id/section_seventeen_row_1_label"
+            android:layout_marginLeft="16dp" />
+
+        <TextView
+            android:id="@+id/section_seventeen_row_2_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/question_seventeen_2"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/section_seventeen_row_1" />
+
+        <EditText
+            android:id="@+id/section_seventeen_row_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:ems="10"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/section_seventeen_row_2_label"
+            app:layout_constraintStart_toEndOf="@+id/section_seventeen_row_2_label"
+            app:layout_constraintTop_toTopOf="@+id/section_seventeen_row_2_label"
+            android:layout_marginLeft="16dp" />
+
+        <TextView
+            android:id="@+id/section_seventeen_row_3_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/question_seventeen_3"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/section_seventeen_row_2" />
+
+        <EditText
+            android:id="@+id/section_seventeen_row_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:ems="10"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/section_seventeen_row_3_label"
+            app:layout_constraintStart_toEndOf="@+id/section_seventeen_row_3_label"
+            app:layout_constraintTop_toTopOf="@+id/section_seventeen_row_3_label"
+            android:layout_marginLeft="16dp" />
+
+        <TextView
+            android:id="@+id/section_seventeen_row_4_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/question_seventeen_4"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/section_seventeen_row_3" />
+
+        <EditText
+            android:id="@+id/section_seventeen_row_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:ems="10"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/section_seventeen_row_4_label"
+            app:layout_constraintStart_toEndOf="@+id/section_seventeen_row_4_label"
+            app:layout_constraintTop_toTopOf="@+id/section_seventeen_row_4_label"
+            android:layout_marginLeft="16dp" />
+
+        <TextView
+            android:id="@+id/section_seventeen_row_5_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/question_seventeen_5"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/section_seventeen_row_4" />
+
+        <EditText
+            android:id="@+id/section_seventeen_row_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:ems="10"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/section_seventeen_row_5_label"
+            app:layout_constraintStart_toEndOf="@+id/section_seventeen_row_5_label"
+            app:layout_constraintTop_toTopOf="@+id/section_seventeen_row_5_label"
+            android:layout_marginLeft="16dp" />
+
+        <TextView
+            android:id="@+id/section_seventeen_row_6_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/question_seventeen_6"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/section_seventeen_row_5" />
+
+        <EditText
+            android:id="@+id/section_seventeen_row_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:ems="10"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/section_seventeen_row_6_label"
+            app:layout_constraintStart_toEndOf="@+id/section_seventeen_row_6_label"
+            app:layout_constraintTop_toTopOf="@+id/section_seventeen_row_6_label"
+            android:layout_marginLeft="16dp" />
+
+        <TextView
+            android:id="@+id/section_seventeen_row_7_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/question_seventeen_7"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/section_seventeen_row_6" />
+
+        <EditText
+            android:id="@+id/section_seventeen_row_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:ems="10"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/section_seventeen_row_7_label"
+            app:layout_constraintStart_toEndOf="@+id/section_seventeen_row_7_label"
+            app:layout_constraintTop_toTopOf="@+id/section_seventeen_row_7_label"
+            android:layout_marginLeft="16dp" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
