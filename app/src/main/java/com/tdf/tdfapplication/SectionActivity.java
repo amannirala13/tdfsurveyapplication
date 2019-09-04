@@ -96,7 +96,7 @@ public class SectionActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent intent = new Intent(SectionActivity.this, classes[position]);
+                Intent intent = new Intent(SectionActivity.this, ProgrammeImplementingAgencyActivity.class);
                 Log.i("PERSON_KEY", personKey);
                 intent.putExtra("PERSON_KEY", personKey);
                 startActivity(intent);
