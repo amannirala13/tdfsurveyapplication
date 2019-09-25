@@ -56,7 +56,6 @@ public class SectionActivity extends AppCompatActivity {
             OtherIncomeGeneratingList.class,//           "Other Income-Generating Activities",
             HouseholdConsumptionList.class,
             FuelLightExpenditureActivity.class,
-            MainActivity.class,//"Agriculture Fuel and Light Expenditure",
             MainActivity.class,//"Food Availibility Analysis",
             MainActivity.class,//"Migration",
             WageEmployementActivity.class,
@@ -69,9 +68,9 @@ public class SectionActivity extends AppCompatActivity {
             OtherTDFInfoActivity.class,
             EnvironmentalBenefitsActivity.class,
             MainActivity.class,//"Applied Compost Details",
-            CommunityInstitutionsActivity.class,//"Community Institutions",
+            CommunityInstitutionsActivity.class,
             MainActivity.class,//"Credit Penetration & it's impact",
-            MainActivity.class,//"Role of Programme Implementing Agency (PIA)",
+            ProgrammeImplementingAgencyActivity.class,
             OtherTDFInfoActivity.class,
             TDFConstraintsActivity.class,
             MainActivity.class,
@@ -96,7 +95,7 @@ public class SectionActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent intent = new Intent(SectionActivity.this, ProgrammeImplementingAgencyActivity.class);
+                Intent intent = new Intent(SectionActivity.this, classes[position]);
                 Log.i("PERSON_KEY", personKey);
                 intent.putExtra("PERSON_KEY", personKey);
                 startActivity(intent);

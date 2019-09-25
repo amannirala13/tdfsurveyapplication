@@ -419,6 +419,10 @@ undertaken through the TDF?</string>
     <string name="question_twentyfour_17">Does the village planning committee/Panchayat get actively involved in planning and training for better fund management
 activities for the works undertaken through the TDF?</string>
 
+    <!--Credit Penetration and it's impact-->
+    <string name="question_twentyfive_1">Are you aware of this product?</string>
+    <string name="question_twentyfive_11">Do any of your household members currently hold this product?</string>
+    <string name="question_twentyfive_12">In the last three years, has any household member chosen this product?</string>
 
     <!--Role of programme Implementing Agency-->
 

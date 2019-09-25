@@ -13,6 +13,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".CreditPenetrationImpactActivity"></activity>
         <activity android:name=".InterventionAnimalHusbandryActivity" />
         <activity android:name=".InterventionInfrastructureActivity" />
         <activity android:name=".OtherIncomeGeneratingList" />
@@ -45,7 +46,7 @@
         <activity android:name=".FamilyDetailsBeneficiary" />
         <activity android:name=".FamilyDetailsFirstScreen" />
         <activity android:name=".FamilyDetailsActivity" />
-        <activity android:name=".ProgrammeImplementingAgencyActivity"/>
+        <activity android:name=".ProgrammeImplementingAgencyActivity" />
         <activity android:name=".BasicHouseholdInformationActivity" />
         <activity android:name=".CommunityInstitutionsActivity" />
         <activity android:name=".PersonalDetailsActivity" />
