@@ -90,18 +90,6 @@ public class PersonalDetailsActivity extends AppCompatActivity {
         });
     }
 
-    private void loadIntoSQLiteDatabase(){
-
-        DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd");
-        Date date = new Date();
-        System.out.println(dateFormat.format(date));
-        DatabaseManager databaseManager = new DatabaseManager(this,"respondent_personal_details");
-        databaseManager.setCreateTable("respondent_id","respondent_name","respondent_contact","respondent_gender","respondent_year_of_joining","respondent_date_of_visit");
-        databaseManager.open();
-        databaseManager.insert(PERSON_KEY,name,contact,gender,year,dateFormat.format(date));
-        Toast.makeText(this,databaseManager.showDetails(),Toast.LENGTH_LONG).show();
-
-    }
 
     private void initialize() {
         editTextName = findViewById(R.id.respondent_name_edit_text);
@@ -127,4 +115,20 @@ public class PersonalDetailsActivity extends AppCompatActivity {
         spinnerYear.setAdapter(adapter);
 
     }
+
+    private void loadIntoSQLiteDatabase(){
+
+        DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd");
+        Date date = new Date();
+        System.out.println(dateFormat.format(date));
+        DatabaseManager databaseManager = new DatabaseManager(this,"respondent_personal_details");
+        databaseManager.setCreateTable("ID","Name","Gender","Year_Joining","Beneficiary","Contact_Number","Date_Visit"); //sheet col: A-J
+        databaseManager.open();
+        databaseManager.showDetails();
+        databaseManager.insert(PERSON_KEY,name,gender,year,isBeneficiary,contact,dateFormat.format(date));
+        Toast.makeText(this,"INSERTED",Toast.LENGTH_LONG).show();
+        Log.i("INSERTED:",databaseManager.showDetails());
+
+    }
+
 }

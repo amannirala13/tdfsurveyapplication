@@ -62,7 +62,7 @@ public class FarmAssetDetails extends AppCompatActivity {
         values = new String[5];
 
         textViewfarmAssetLabel = findViewById(R.id.item_label);
-        button = findViewById(R.id.wage_info_submit);
+        button = findViewById(R.id.asset_info_submit);
         editTextIJAfterTDF = findViewById(R.id.number_of_days_after);
         editTextNoAfterTDF = findViewById(R.id.wage_value_after);
         editTextIJBeforeTDF = findViewById(R.id.wage_number_of_days);

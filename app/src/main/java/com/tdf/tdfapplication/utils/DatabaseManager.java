@@ -8,7 +8,7 @@ import android.util.Log;
 
 public class DatabaseManager {
 
-    private String tableName;
+    public String tableName;
     private String createTable;
     private String values;
     private DatabaseHelper dbHelper;
@@ -21,6 +21,7 @@ public class DatabaseManager {
         values = " ";
 
     }
+
 
     public String getCreateTable() {
         return createTable;
@@ -56,7 +57,7 @@ public class DatabaseManager {
         builder.append("create table ").append(tableName).append(" (");
         for (String value : values) {
             builder.append(value);
-            builder.append(" varchar(20),");
+            builder.append(" varchar(50),");
         }
         createTable = builder.toString();
         createTable = createTable.substring(0, createTable.length() - 1) + ")";

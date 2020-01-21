@@ -23,7 +23,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
 
-        // create notes table
+        // creating table
+
         db.execSQL(databaseManager.getCreateTable());
     }
 

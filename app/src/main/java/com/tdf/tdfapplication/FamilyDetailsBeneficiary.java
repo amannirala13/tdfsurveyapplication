@@ -7,6 +7,11 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
+
+import com.tdf.tdfapplication.utils.DatabaseManager;
+
+import static com.tdf.tdfapplication.PersonalDetailsActivity.PERSON_KEY;
 
 public class FamilyDetailsBeneficiary extends AppCompatActivity {
 
@@ -46,5 +51,16 @@ public class FamilyDetailsBeneficiary extends AppCompatActivity {
         editTextBeforeTDFMinor = findViewById(R.id.wage_value);
         editTextNumberOfMembers = findViewById(R.id.family_member_count);
         button = findViewById(R.id.wage_info_submit);
+    }
+
+    private void loadIntoSQLiteDatabase(){
+
+        DatabaseManager databaseManager = new DatabaseManager(this,"respondent_family_details_beneficiary");
+        databaseManager.setCreateTable("ID", "Major_Occu_Before","Subsidiary_Occu_Before","Major_Occu_After","Subsidiary_Occupation_After");//Sheet col: CU-CX
+        databaseManager.open();
+        databaseManager.insert(PERSON_KEY,majorBeforeTDF,minorBeforeTDF,majorAfterTDF,minorAfterTDF);
+        Toast.makeText(this,"INSERTED",Toast.LENGTH_LONG).show();
+        Log.i("INSERTED:",databaseManager.showDetails());
+
     }
 }

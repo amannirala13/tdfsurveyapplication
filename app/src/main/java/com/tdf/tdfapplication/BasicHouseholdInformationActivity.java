@@ -12,6 +12,11 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.tdf.tdfapplication.utils.DatabaseManager;
+
+import static com.tdf.tdfapplication.PersonalDetailsActivity.PERSON_KEY;
 
 public class BasicHouseholdInformationActivity extends AppCompatActivity {
 
@@ -45,8 +50,8 @@ public class BasicHouseholdInformationActivity extends AppCompatActivity {
                         electricty = checkBox.getText().toString() + ",";
                     }
                 }
-
-                Log.i("INFO", PersonalDetailsActivity.PERSON_KEY + " " + totalIncome + " " + caste + " " + tribe + " "
+                loadIntoSQLiteDatabase();
+                Log.i("INFO", PERSON_KEY + " " + totalIncome + " " + caste + " " + tribe + " "
                         + religion + " " + numberOfPeople + " " + electricty + " " + rationCardType);
                 Intent intent = new Intent(BasicHouseholdInformationActivity.this, BasicHouseholdInfoActivity.class);
                 intent.putExtra("NUMBER_OF_MEMBERS", numberOfPeople);
@@ -168,6 +173,18 @@ public class BasicHouseholdInformationActivity extends AppCompatActivity {
         spinnerRationCardType.setAdapter(arrayAdapter4);
 
     }
+
+    private void loadIntoSQLiteDatabase(){
+
+        DatabaseManager databaseManager = new DatabaseManager(this,"respondent_basic_household_information");
+        databaseManager.setCreateTable("ID","Religion",	"Caste",	"Tribe",	"Annual_Income",	"Household_Size");//Sheet col: K-O
+        databaseManager.open();
+        databaseManager.insert(PERSON_KEY,religion,caste,tribe,totalIncome,numberOfPeople);
+        Toast.makeText(this,"INSERTED",Toast.LENGTH_LONG).show();
+        Log.i("INSERTED:",databaseManager.showDetails());
+
+    }
+
 
 }
 
