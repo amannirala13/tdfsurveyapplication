@@ -80,6 +80,7 @@ public class DatabaseManager {
     public DatabaseManager open() throws SQLException {
         dbHelper = new DatabaseHelper(context, this);
         database = dbHelper.getWritableDatabase();
+        dbHelper.onUpgrade(database,0,1);
         return this;
     }
 
