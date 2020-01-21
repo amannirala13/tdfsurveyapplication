@@ -96,7 +96,7 @@ public class DatabaseManager {
                 .append(")")
                 .toString();
         database.execSQL(query);
-        Log.i("Insert query", query);
+        Log.i("Insert query:", query);
     }
 
     public Cursor fetch() {
@@ -109,9 +109,11 @@ public class DatabaseManager {
         return cursor;
     }
 
-    public void showDetails() {
+        public String  showDetails() {
         Cursor cursor = fetch();
         Log.i("Num rows", Integer.toString(cursor.getCount()));
+        StringBuilder rowValues = new StringBuilder();
+
         while (cursor.moveToNext()) {
             StringBuilder builder = new StringBuilder();
             for (int i = 0; i < cursor.getColumnCount(); i++) {
@@ -120,8 +122,11 @@ public class DatabaseManager {
             }
             String columnValues = builder.toString();
             Log.i("row: ", columnValues);
-        }
+            rowValues.append(columnValues+"\n");
 
+
+        }
+        return rowValues.toString();
 
     }
 }
