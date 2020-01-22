@@ -18,7 +18,8 @@
             android:text="@string/question_one_5"
             android:textSize="20sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="16dp" />
 
         <Spinner
             android:id="@+id/respondent_MGNERA_card_count"
@@ -28,7 +29,8 @@
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="@+id/respondent_MGNERA_card_label"
             app:layout_constraintStart_toEndOf="@+id/respondent_MGNERA_card_label"
-            app:layout_constraintTop_toTopOf="@+id/respondent_MGNERA_card_label" />
+            app:layout_constraintTop_toTopOf="@+id/respondent_MGNERA_card_label"
+            android:layout_marginLeft="16dp" />
 
         <TextView
             android:id="@+id/respondent_MGNERA_card_male_label"
@@ -48,7 +50,8 @@
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="@+id/respondent_MGNERA_card_male_label"
             app:layout_constraintStart_toEndOf="@+id/respondent_MGNERA_card_male_label"
-            app:layout_constraintTop_toTopOf="@+id/respondent_MGNERA_card_male_label" />
+            app:layout_constraintTop_toTopOf="@+id/respondent_MGNERA_card_male_label"
+            android:layout_marginLeft="16dp" />
 
         <TextView
             android:id="@+id/respondent_AADHAR_card_label"

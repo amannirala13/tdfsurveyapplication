@@ -69,7 +69,6 @@ public class AnimalHusbandryList extends AppCompatActivity {
                 }
             }
         });
-
     }
 
     private void initialize() {
