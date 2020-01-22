@@ -141,9 +141,9 @@ public class BasicHouseholdInfoActivity extends AppCompatActivity {
 
         DatabaseManager databaseManager = new DatabaseManager(this,"respondent_basic_household_info");
         databaseManager.setCreateTable("ID","MGNREGA_Card_COUNT","MGNREGA_Male",	"MGNREGA_Female",
-        "Aadhar_Card",	"Electricity_Home_Y_N",	"Electricity_Farm_Y_N",	"SHG_Member_Before","SHG_Member_After");//Sheet col: P-Y
+        "Aadhar_Card",	"SHG_Member_Before","SHG_Member_After");//Sheet col: P-Y
         databaseManager.open();
-        databaseManager.insert(PERSON_KEY,countMGNERA,countMaleMGNERA,countFemaleMGNERA,countAADHAR,"To add","To add","To add",countSHG);
+        databaseManager.insert(PERSON_KEY,countMGNERA,countMaleMGNERA,countFemaleMGNERA,countAADHAR,"To add",countSHG);
         Toast.makeText(this,"INSERTED",Toast.LENGTH_LONG).show();
         Log.i("INSERTED:",databaseManager.showDetails());
 

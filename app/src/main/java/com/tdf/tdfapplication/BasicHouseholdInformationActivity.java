@@ -177,9 +177,9 @@ public class BasicHouseholdInformationActivity extends AppCompatActivity {
     private void loadIntoSQLiteDatabase(){
 
         DatabaseManager databaseManager = new DatabaseManager(this,"respondent_basic_household_information");
-        databaseManager.setCreateTable("ID","Religion",	"Caste",	"Tribe",	"Annual_Income",	"Household_Size",	"Ration_Card_Type",);//Sheet col: K-O
+        databaseManager.setCreateTable("ID","Religion",	"Caste",	"Tribe",	"Annual_Income","Household_Size",	"Ration_Card_Type","Electricity");//Sheet col: K-O
         databaseManager.open();
-        databaseManager.insert(PERSON_KEY,religion,caste,tribe,totalIncome,numberOfPeople,rationCardType);
+        databaseManager.insert(PERSON_KEY,religion,caste,tribe,totalIncome,numberOfPeople,rationCardType,electricty);
         Toast.makeText(this,"INSERTED",Toast.LENGTH_LONG).show();
         Log.i("INSERTED:",databaseManager.showDetails());
 

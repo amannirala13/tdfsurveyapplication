@@ -54,7 +54,7 @@ public class DatabaseManager {
 
     public void setCreateTable(String... values) {
         StringBuilder builder = new StringBuilder();
-        builder.append("create table ").append(tableName).append(" (");
+        builder.append("create table IF NOT EXISTS ").append(tableName).append(" (");
         for (String value : values) {
             builder.append(value);
             builder.append(" varchar(50),");
@@ -80,7 +80,7 @@ public class DatabaseManager {
     public DatabaseManager open() throws SQLException {
         dbHelper = new DatabaseHelper(context, this);
         database = dbHelper.getWritableDatabase();
-        dbHelper.onUpgrade(database,0,1);
+        dbHelper.onCreate(database);
         return this;
     }
 

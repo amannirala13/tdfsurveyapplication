@@ -41,13 +41,19 @@ public class FamilyDetailsActivity extends AppCompatActivity {
             public void onClick(View v) {
                 name = editTextName.getText().toString();
                 age = editTextAge.getText().toString();
+                radioButton = findViewById(genderGroup.getCheckedRadioButtonId());
+                if (radioButton.getText() == "Male") {
+                    gender = "1";
+                } else {
+                    gender = "2";
+                }
                 education = editTextEducation.getText().toString();
                 occupationAfterTDF = editTextOccupationAfterTDF.getText().toString();
                 occupationBeforeTDF = editTextOccupationBeforeTDF.getText().toString();
                 incomeBeforeTDF = editTextIncomeBeforeTDF.getText().toString();
                 incomeAfterTDF = editTextIncomeAfterTDF.getText().toString();
 
-                Log.i("INFO", name + " " + age + " " + education + " " + occupationBeforeTDF + " " + occupationAfterTDF + " " + incomeAfterTDF + " " + incomeAfterTDF);
+                Log.i("INFO", name + " " + age + " " + gender + " " + education + " " + occupationBeforeTDF + " " + occupationAfterTDF + " " + incomeAfterTDF + " " + incomeAfterTDF);
                 loadIntoSQLiteDatabase();
                 if (count < numberOfMembers - 1) {
                     editTextAge.setText("");
