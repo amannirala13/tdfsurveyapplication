@@ -96,4 +96,6 @@ public class FamilyDetailsActivity extends AppCompatActivity {
         Log.i("INSERTED:",databaseManager.showDetails());
 
     }
+
+
 }
