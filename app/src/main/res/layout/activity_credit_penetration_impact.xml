@@ -32,11 +32,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="76dp"
+            android:layout_marginTop="16dp"
             android:text="Tractor With Plougher"
             android:textSize="20sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/farm_asset_label" />
+            app:layout_constraintTop_toBottomOf="@+id/credit_penetration_impact_label" />
 
         <TextView
             android:id="@+id/before_tdf_label"
@@ -54,8 +54,8 @@
 
         <TextView
             android:id="@+id/wage_number_of_days_label"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
             android:layout_marginTop="32dp"
             android:text="@string/question_four_sub_one_1"
             android:textSize="20sp"
